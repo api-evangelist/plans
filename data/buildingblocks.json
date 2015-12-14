@@ -1,5 +1,16 @@
 [
 	{
+		"building_block_id": "RS116UdBwrOOTzBgdS8iq7e3iw6v0LkPEUKL0FcQCBEQmNpOvxNoyFA4s4GuQ1161iYAhiMjYB1GrFuq4r9DKsjOAQ117117",
+		"building_block_category_id": "EpyaaYWUaIz4c7v9DAx116awdHM3g5INcSa0bY75QYX4312p2M81gQmeUjGHCuqzdkFpvM2qRXz4fTrarfJlHzxw117117",
+		"name": "Access",
+		"about": "Where access to an API is on the table, and might not be publicly available, or part of all plans.",
+		"category_id": "261",
+		"category": "Metrics",
+		"image": "",
+		"image_width": "100",
+		"sort_order": "1"
+	},
+	{
 		"building_block_id": "OBuZsWoBAV1gka5ktCs2o1ZxC0ZTFDjf123q116SbcZSbwzKvXVMYS7T2LCGJKuUXHhCno9oVNosXuHwfrFBgs123iMg117117",
 		"building_block_category_id": "oQDH123HCyZxZAEwFtUMUdKUFkWXxLtjiZyMS5juZMidJNyz5fd8rX116hVFpY3S21160UlHl116qptsPqZi2qs5CdtXog117117",
 		"name": "Endpoints",
@@ -8,7 +19,18 @@
 		"category": "Resources",
 		"image": "",
 		"image_width": "100",
-		"sort_order": "0"
+		"sort_order": "1"
+	},
+	{
+		"building_block_id": "sD3edeUTcqW72VvNhx7E0aNy116zgSJI9LCqMAtu9ReRJgRZBdywEG116d2eSMH7rC4v7123gxSfeB2N1jbhcasJeCMw117117",
+		"building_block_category_id": "ukPn8V2BTyTAYOyMnd0bz3QCwD83xUj7j5p123p8HvoQNNj0w123Yf6IK4DYqiJJFfXXonSxlFLjTo4jNwApNYDvJA117117",
+		"name": "Overview",
+		"about": "Provide a single landing page, available at a simple URL, with all the information about plans available as part of platform operations.",
+		"category_id": "260",
+		"category": "Elements",
+		"image": "",
+		"image_width": "100",
+		"sort_order": "1"
 	},
 	{
 		"building_block_id": "jOLgY9v2ykSFgZOWH123k5sKoXCRxanKYUx2XKXr1UpqsJmp3SNnhK8oKDWvrBPPhKs116fDgGomo2hSCaEVUohuUg117117",
@@ -19,18 +41,7 @@
 		"category": "Resources",
 		"image": "",
 		"image_width": "100",
-		"sort_order": "0"
-	},
-	{
-		"building_block_id": "RS116UdBwrOOTzBgdS8iq7e3iw6v0LkPEUKL0FcQCBEQmNpOvxNoyFA4s4GuQ1161iYAhiMjYB1GrFuq4r9DKsjOAQ117117",
-		"building_block_category_id": "EpyaaYWUaIz4c7v9DAx116awdHM3g5INcSa0bY75QYX4312p2M81gQmeUjGHCuqzdkFpvM2qRXz4fTrarfJlHzxw117117",
-		"name": "Access",
-		"about": "Where access to an API is on the table, and might not be publicly available, or part of all plans.",
-		"category_id": "261",
-		"category": "Metrics",
-		"image": "",
-		"image_width": "100",
-		"sort_order": "1"
+		"sort_order": "2"
 	},
 	{
 		"building_block_id": "7EqZ2zV2TJVyjabRh0GFiIPI5LKp41ePoGReG9X3BnFCStbFodAF7H116x9123MbnseoxGlI8ZwwnMGH7gnEV6116DwQ117117",
@@ -113,7 +124,7 @@
 		"building_block_id": "Ojcb4c116odu4vG123xOrCJ2Nf1cruiky2xhPwdly2VNrwLWev9HpglTCMSW2np2HOztYaH5DEx123dn26g6qg4sxuGw117117",
 		"building_block_category_id": "EpyaaYWUaIz4c7v9DAx116awdHM3g5INcSa0bY75QYX4312p2M81gQmeUjGHCuqzdkFpvM2qRXz4fTrarfJlHzxw117117",
 		"name": "Price Per",
-		"about": "",
+		"about": "Considering a price per a specific amount of API calls or other metric being applied as part of API consumption.",
 		"category_id": "261",
 		"category": "Metrics",
 		"image": "",
