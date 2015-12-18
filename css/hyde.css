@@ -235,6 +235,7 @@ a:focus {
     bottom: 0;
     right: 0;
     left: 0;
+    vertical-align: text-top;
   }
   .masthead h1 {
     font-size: 64px;
