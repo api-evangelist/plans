@@ -186,7 +186,6 @@ a:focus {
   border: 1px solid #FFF;
 }
 .masthead-inner {
-  border: 2px solid #FFF;
 }
 
 .masthead h2 {
@@ -232,11 +231,10 @@ a:focus {
     margin-bottom: 0;
   }
   .masthead-inner {
+    position: absolute;
     bottom: 0;
     right: 0;
     left: 0;
-    vertical-align: text-top;
-    vertical-align: top;
   }
   .masthead h1 {
     font-size: 64px;
