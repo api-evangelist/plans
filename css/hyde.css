@@ -230,6 +230,7 @@ a:focus {
     margin-bottom: 0;
   }
   .masthead-inner {
+    vertical-align: top;
     position: absolute;
     bottom: 0;
     right: 0;
