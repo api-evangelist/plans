@@ -223,7 +223,6 @@ a:focus {
 @media (min-width: 990px) {
   /* Fix the masthead to the side for impact and awesomeness */
   .masthead {
-    position: fixed;
     top: 0;
     left: 0;
     bottom: 0;
@@ -236,6 +235,7 @@ a:focus {
     right: 0;
     left: 0;
     vertical-align: text-top;
+    vertical-align: top;
   }
   .masthead h1 {
     font-size: 64px;
