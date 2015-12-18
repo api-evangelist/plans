@@ -186,6 +186,7 @@ a:focus {
   border: 1px solid #FFF;
 }
 .masthead-inner {
+  border: 2px solid #FFF;
 }
 
 .masthead h2 {
