@@ -531,7 +531,7 @@
 		"building_block_id": "zjStlxH7jVBGE6xmP116N5zqF1IIyKuSuPOfFDUnfbL6BBWUIZ116iIYn1mKhc116E0N9WMwp7UpzGHH1230UCeIXcE2JA117117",
 		"building_block_category_id": "EpyaaYWUaIz4c7v9DAx116awdHM3g5INcSa0bY75QYX4312p2M81gQmeUjGHCuqzdkFpvM2qRXz4fTrarfJlHzxw117117",
 		"name": "Operating System",
-		"about": "",
+		"about": "Measurement of resources, based upon the operating system for compute resources.",
 		"category_id": "261",
 		"category": "Metrics",
 		"image": "",
