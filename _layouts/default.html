@@ -8,6 +8,16 @@
     <header class="masthead">
       <div class="masthead-inner" align="center">
 
+        <script type="text/javascript">
+        	// Do we have a token?
+        	var $oAuth_Token = getUrlVar('oAuth_Token');
+
+    		  var $org = '{{ site.org }}';
+    		  var $repo = '{{ site.repo }}';
+    	    var $oauthio = '{{ site.oauthio }}';
+
+        </script>
+
         <!-- Masthead Title -->
         <h2><a href="{{ site.masthead_link }}" style="font-size: {{ site.masthead_font_size }}%;">{{ site.masthead_title }}</a></h2>
 
