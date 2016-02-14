@@ -4,7 +4,7 @@ function deploySwagger()
   	{
 	  var $url = "http://plans.apievangelist.com/api/openapi-spec.json";
 
-    console.log($url);
+    //console.log($url);
 
 	  window.swaggerUi = new SwaggerUi({
 	    url: $url,
@@ -14,9 +14,12 @@ function deploySwagger()
 
 	    var textboxes = document.getElementsByTagName("input");
 
-	    $appid = $apikeys["API Evangelist"]['appid'];
-	    $appkey = $apikeys["API Evangelist"]['appkey'];
+	    //$appid = $apikeys["API Evangelist"]['appid'];
+	    //$appkey = $apikeys["API Evangelist"]['appkey'];
 
+      $appid = '';
+      $appkey = '';
+      
 			for (var i=0;i<textboxes.length;i++)
 			 	{
 			    var textbox = textboxes[i];
@@ -46,7 +49,7 @@ function deploySwagger()
 	  });
 
 	  window.swaggerUi.load();
-    
+
   }
 
 if($login=='1')
