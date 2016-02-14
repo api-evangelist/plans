@@ -1,0 +1,159 @@
+{
+  "name": "Kin Lane - Plans",
+  "description": "This is my research into the plans of leading API providers, across a variety of the top business sectors. I am looking to establish a baseline for how APIs are planned acrosss the industry today, establish models others can follow. You can find news I've curated, organizations doing interesting things, some of the common building blocks I've identified, and open source tooling in this research report.",
+  "image": "https://s3.amazonaws.com/kinlane-productions/bw-icons/bw-plan.png",
+  "tags": [
+    "application programming interface",
+    "API",
+    "Plans",
+    "Pricing"
+  ],
+  "created": "2016-02-13",
+  "modified": "2016-02-13",
+  "url": "https://api-evangelist.github.io/plans/apis.json",
+  "SpecificationVersion": "0.14",
+  "apis": [
+    {
+      "name": "Plans",
+      "description": "The API planning API.",
+      "image": "https://s3.amazonaws.com/kinlane-productions/bw-icons/bw-plan.png",
+      "humanURL": "https://api-evangelist.github.io/plans/",
+      "baseURL": "http://plans.api.kinlane.com",
+      "tags": [
+        "API",
+        "Application Programming Interface",
+        "Plans"
+      ],
+      "properties": [
+        {
+          "type": "Swagger",
+          "url": "https://api-evangelist.github.io/plans/swagger.json"
+        }
+      ],
+      "contact": [
+        {
+          "FN": "API Evangliest",
+          "email": "info@apievangelist.com",
+          "X-twitter": "apievangelist"
+        }
+      ]
+    }
+  ],
+  "include": [
+    {
+      "name": "API API (Inception)",
+      "url": "https://kin-lane.github.io/api/apis.json"
+    },
+    {
+      "name": "Audio API",
+      "url": "https://kin-lane.github.io/audio/apis.json"
+    },
+    {
+      "name": "Building Block API",
+      "url": "https://kin-lane.github.io/buildingblock/apis.json"
+    },
+    {
+      "name": "Certification API",
+      "url": "https://kin-lane.github.io/certification/apis.json"
+    },
+    {
+      "name": "Curated API",
+      "url": "https://kin-lane.github.io/curated/apis.json"
+    },
+    {
+      "name": "Dictionary API",
+      "url": "https://kin-lane.github.io/dictionary/apis.json"
+    },
+    {
+      "name": "Glossary API",
+      "url": "https://kin-lane.github.io/glossary/apis.json"
+    },
+    {
+      "name": "Image API",
+      "url": "https://kin-lane.github.io/image/apis.json"
+    },
+    {
+      "name": "Job API",
+      "url": "https://kin-lane.github.io/job/apis.json"
+    },
+    {
+      "name": "Keyword API",
+      "url": "https://kin-lane.github.io/keyword/apis.json"
+    },
+    {
+      "name": "Link API",
+      "url": "https://kin-lane.github.io/link/apis.json"
+    },
+    {
+      "name": "Linkrot API",
+      "url": "https://kin-lane.github.io/linkrot/apis.json"
+    },
+    {
+      "name": "News API",
+      "url": "https://kin-lane.github.io/news/apis.json"
+    },
+    {
+      "name": "Note API",
+      "url": "https://kin-lane.github.io/note/apis.json"
+    },
+    {
+      "name": "Organization API",
+      "url": "https://kin-lane.github.io/organization/apis.json"
+    },
+    {
+      "name": "Page API",
+      "url": "https://kin-lane.github.io/page/apis.json"
+    },
+    {
+      "name": "Paper API",
+      "url": "https://kin-lane.github.io/paper/apis.json"
+    },
+    {
+      "name": "Patent API",
+      "url": "https://kin-lane.github.io/patent/apis.json"
+    },
+    {
+      "name": "People API",
+      "url": "https://kin-lane.github.io/people/apis.json"
+    },
+    {
+      "name": "Project API",
+      "url": "https://kin-lane.github.io/project/apis.json"
+    },
+    {
+      "name": "Question API",
+      "url": "https://kin-lane.github.io/question/apis.json"
+    },
+    {
+      "name": "Slide API",
+      "url": "https://kin-lane.github.io/slide/apis.json"
+    },
+    {
+      "name": "Tag API",
+      "url": "https://kin-lane.github.io/tag/apis.json"
+    },
+    {
+      "name": "Task API",
+      "url": "https://kin-lane.github.io/task/apis.json"
+    },
+    {
+      "name": "Tip API",
+      "url": "https://kin-lane.github.io/tip/apis.json"
+    },
+    {
+      "name": "Tool API",
+      "url": "https://kin-lane.github.io/tool/apis.json"
+    },
+    {
+      "name": "Video API",
+      "url": "https://kin-lane.github.io/video/apis.json"
+    }
+  ],
+  "maintainers": [
+    {
+      "FN": "API Evangliest",
+      "X-twitter": "apievangelist",
+      "email": "info@apievangelist.com"
+    }
+  ]
+}

@@ -1,0 +1,2587 @@
+{
+  "swagger": "2.0",
+  "info": {
+    "title": "Plans",
+    "description": "This is the API I use for adding, and managing the different types of plans offered for my own APIs, as well as the APIs that I track on across the API sector.",
+    "termsOfService": "http://stack.network/terms-of-service.html",
+    "version": "v2"
+  },
+  "host": "plans.api.apievangelist.com",
+  "basePath": "/",
+  "schemes": [
+    "http"
+  ],
+  "produces": [
+    "application/json"
+  ],
+  "paths": {
+    "/elements/": {
+      "get": {
+        "summary": "get plan elements",
+        "description": "get plan elements",
+        "operationId": "getElements",
+        "parameters": [
+          {
+            "name": "appid",
+            "in": "query",
+            "description": "your appid for accessing the api",
+            "required": true,
+            "type": "string"
+          },
+          {
+            "name": "appkey",
+            "in": "query",
+            "description": "your appkey for accessing the api",
+            "required": true,
+            "type": "string"
+          },
+          {
+            "name": "name",
+            "in": "query",
+            "description": "name of element to search for",
+            "required": false,
+            "type": "string"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "element response",
+            "schema": {
+              "type": "array",
+              "items": {
+                "$ref": "#/definitions/element"
+              }
+            }
+          }
+        },
+        "tags": [
+          "Element"
+        ],
+        "security": [
+          {
+            "appid": []
+          },
+          {
+            "appkey": []
+          }
+        ]
+      },
+      "post": {
+        "summary": "add an element",
+        "description": "add an element",
+        "operationId": "addElement",
+        "parameters": [
+          {
+            "name": "appid",
+            "in": "query",
+            "description": "your appid for accessing the element",
+            "required": true,
+            "type": "string"
+          },
+          {
+            "name": "appkey",
+            "in": "query",
+            "description": "your appkey for accessing the element",
+            "required": true,
+            "type": "string"
+          },
+          {
+            "name": "name",
+            "in": "query",
+            "description": "name of the element",
+            "required": true,
+            "type": "string"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "element response",
+            "schema": {
+              "type": "array",
+              "items": {
+                "$ref": "#/definitions/element"
+              }
+            }
+          }
+        },
+        "tags": [
+          "Element"
+        ],
+        "security": [
+          {
+            "appid": []
+          },
+          {
+            "appkey": []
+          }
+        ]
+      }
+    },
+    "/spec/": {
+      "get": {
+        "summary": "get spec",
+        "description": "get spec",
+        "operationId": "getSpec",
+        "parameters": [
+          {
+            "name": "appid",
+            "in": "query",
+            "description": "your appid for accessing the api",
+            "required": true,
+            "type": "string"
+          },
+          {
+            "name": "appkey",
+            "in": "query",
+            "description": "your appkey for accessing the api",
+            "required": true,
+            "type": "string"
+          },
+          {
+            "name": "host",
+            "in": "query",
+            "description": "host to retrieve spec for",
+            "required": true,
+            "type": "string"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "spec response",
+            "schema": {
+              "type": "array",
+              "items": {
+                "$ref": "#/definitions/specification"
+              }
+            }
+          }
+        },
+        "tags": [
+          "Specification"
+        ],
+        "security": [
+          {
+            "appid": []
+          },
+          {
+            "appkey": []
+          }
+        ]
+      },
+      "post": {
+        "summary": "add spec",
+        "description": "add spec",
+        "operationId": "addSpec",
+        "parameters": [
+          {
+            "name": "appid",
+            "in": "query",
+            "description": "your appid for accessing the spec",
+            "required": true,
+            "type": "string"
+          },
+          {
+            "name": "appkey",
+            "in": "query",
+            "description": "your appkey for accessing the spec",
+            "required": true,
+            "type": "string"
+          },
+          {
+            "name": "body",
+            "in": "body",
+            "description": "post a full spec",
+            "required": true,
+             "schema":{
+                "type":"array",
+                "items":{
+                   "$ref":"#/definitions/specification"
+              }
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "spec response",
+            "schema": {
+              "type": "array",
+              "items": {
+                "$ref": "#/definitions/specification"
+              }
+            }
+          }
+        },
+        "tags": [
+          "Specification"
+        ],
+        "security": [
+          {
+            "appid": []
+          },
+          {
+            "appkey": []
+          }
+        ]
+      }
+    },
+    "/base/": {
+      "get": {
+        "summary": "get base settings",
+        "description": "get base settings",
+        "operationId": "getBase",
+        "parameters": [
+          {
+            "name": "appid",
+            "in": "query",
+            "description": "your appid for accessing the api",
+            "required": true,
+            "type": "string"
+          },
+          {
+            "name": "appkey",
+            "in": "query",
+            "description": "your appkey for accessing the api",
+            "required": true,
+            "type": "string"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "base response",
+            "schema": {
+              "type": "array",
+              "items": {
+                "$ref": "#/definitions/base"
+              }
+            }
+          }
+        },
+        "tags": [
+          "Base"
+        ],
+        "security": [
+          {
+            "appid": []
+          },
+          {
+            "appkey": []
+          }
+        ]
+      }
+    },
+    "/extensions/": {
+      "get": {
+        "summary": "get extensions",
+        "description": "get extensions",
+        "operationId": "getExtensions",
+        "parameters": [
+          {
+            "name": "appid",
+            "in": "query",
+            "description": "your appid for accessing the api",
+            "required": true,
+            "type": "string"
+          },
+          {
+            "name": "appkey",
+            "in": "query",
+            "description": "your appkey for accessing the api",
+            "required": true,
+            "type": "string"
+          },
+          {
+            "name": "name",
+            "in": "query",
+            "description": "name of extension to search for",
+            "required": false,
+            "type": "string"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "extension response",
+            "schema": {
+              "type": "array",
+              "items": {
+                "$ref": "#/definitions/extension"
+              }
+            }
+          }
+        },
+        "tags": [
+          "Extension"
+        ],
+        "security": [
+          {
+            "appid": []
+          },
+          {
+            "appkey": []
+          }
+        ]
+      },
+      "post": {
+        "summary": "add an extension",
+        "description": "add an extensiont",
+        "operationId": "addExtension",
+        "parameters": [
+          {
+            "name": "appid",
+            "in": "query",
+            "description": "your appid for accessing the extension",
+            "required": true,
+            "type": "string"
+          },
+          {
+            "name": "appkey",
+            "in": "query",
+            "description": "your appkey for accessing the extension",
+            "required": true,
+            "type": "string"
+          },
+          {
+            "name": "name",
+            "in": "query",
+            "description": "name of the extension",
+            "required": true,
+            "type": "string"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "extension response",
+            "schema": {
+              "type": "array",
+              "items": {
+                "$ref": "#/definitions/extension"
+              }
+            }
+          }
+        },
+        "tags": [
+          "Extension"
+        ],
+        "security": [
+          {
+            "appid": []
+          },
+          {
+            "appkey": []
+          }
+        ]
+      }
+    },
+    "/geo/": {
+      "get": {
+        "summary": "get geo",
+        "description": "get geo",
+        "operationId": "getGeo",
+        "parameters": [
+          {
+            "name": "appid",
+            "in": "query",
+            "description": "your appid for accessing the api",
+            "required": true,
+            "type": "string"
+          },
+          {
+            "name": "appkey",
+            "in": "query",
+            "description": "your appkey for accessing the api",
+            "required": true,
+            "type": "string"
+          },
+          {
+            "name": "name",
+            "in": "query",
+            "description": "name of geo to search for",
+            "required": false,
+            "type": "string"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "geo response",
+            "schema": {
+              "type": "array",
+              "items": {
+                "$ref": "#/definitions/geo"
+              }
+            }
+          }
+        },
+        "tags": [
+          "Geo"
+        ],
+        "security": [
+          {
+            "appid": []
+          },
+          {
+            "appkey": []
+          }
+        ]
+      },
+      "post": {
+        "summary": "add an geo",
+        "description": "add an geo",
+        "operationId": "addGeo",
+        "parameters": [
+          {
+            "name": "appid",
+            "in": "query",
+            "description": "your appid for accessing the geo",
+            "required": true,
+            "type": "string"
+          },
+          {
+            "name": "appkey",
+            "in": "query",
+            "description": "your appkey for accessing the geo",
+            "required": true,
+            "type": "string"
+          },
+          {
+            "name": "name",
+            "in": "query",
+            "description": "name of the geo",
+            "required": true,
+            "type": "string"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "geo response",
+            "schema": {
+              "type": "array",
+              "items": {
+                "$ref": "#/definitions/geo"
+              }
+            }
+          }
+        },
+        "tags": [
+          "Geo"
+        ],
+        "security": [
+          {
+            "appid": []
+          },
+          {
+            "appkey": []
+          }
+        ]
+      }
+    },
+    "/limits/": {
+      "get": {
+        "summary": "get limits",
+        "description": "get limits",
+        "operationId": "getLimits",
+        "parameters": [
+          {
+            "name": "appid",
+            "in": "query",
+            "description": "your appid for accessing the api",
+            "required": true,
+            "type": "string"
+          },
+          {
+            "name": "appkey",
+            "in": "query",
+            "description": "your appkey for accessing the api",
+            "required": true,
+            "type": "string"
+          },
+          {
+            "name": "name",
+            "in": "query",
+            "description": "name of limit to search for",
+            "required": false,
+            "type": "string"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "limit response",
+            "schema": {
+              "type": "array",
+              "items": {
+                "$ref": "#/definitions/limit"
+              }
+            }
+          }
+        },
+        "tags": [
+          "Limit"
+        ],
+        "security": [
+          {
+            "appid": []
+          },
+          {
+            "appkey": []
+          }
+        ]
+      },
+      "post": {
+        "summary": "add an limit",
+        "description": "add an limitt",
+        "operationId": "addLImit",
+        "parameters": [
+          {
+            "name": "appid",
+            "in": "query",
+            "description": "your appid for accessing the limit",
+            "required": true,
+            "type": "string"
+          },
+          {
+            "name": "appkey",
+            "in": "query",
+            "description": "your appkey for accessing the limit",
+            "required": true,
+            "type": "string"
+          },
+          {
+            "name": "name",
+            "in": "query",
+            "description": "name of the limit",
+            "required": true,
+            "type": "string"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "limit response",
+            "schema": {
+              "type": "array",
+              "items": {
+                "$ref": "#/definitions/limit"
+              }
+            }
+          }
+        },
+        "tags": [
+          "Limit"
+        ],
+        "security": [
+          {
+            "appid": []
+          },
+          {
+            "appkey": []
+          }
+        ]
+      }
+    },
+    "/metrics/": {
+      "get": {
+        "summary": "get metrics",
+        "description": "get metrics",
+        "operationId": "getMetrics",
+        "parameters": [
+          {
+            "name": "appid",
+            "in": "query",
+            "description": "your appid for accessing the api",
+            "required": true,
+            "type": "string"
+          },
+          {
+            "name": "appkey",
+            "in": "query",
+            "description": "your appkey for accessing the api",
+            "required": true,
+            "type": "string"
+          },
+          {
+            "name": "name",
+            "in": "query",
+            "description": "name of metric to search for",
+            "required": false,
+            "type": "string"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "metric response",
+            "schema": {
+              "type": "array",
+              "items": {
+                "$ref": "#/definitions/metric"
+              }
+            }
+          }
+        },
+        "tags": [
+          "Metric"
+        ],
+        "security": [
+          {
+            "appid": []
+          },
+          {
+            "appkey": []
+          }
+        ]
+      },
+      "post": {
+        "summary": "add an metric",
+        "description": "add an metrict",
+        "operationId": "addMetric",
+        "parameters": [
+          {
+            "name": "appid",
+            "in": "query",
+            "description": "your appid for accessing the metric",
+            "required": true,
+            "type": "string"
+          },
+          {
+            "name": "appkey",
+            "in": "query",
+            "description": "your appkey for accessing the metric",
+            "required": true,
+            "type": "string"
+          },
+          {
+            "name": "name",
+            "in": "query",
+            "description": "name of the metric",
+            "required": true,
+            "type": "string"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "metric response",
+            "schema": {
+              "type": "array",
+              "items": {
+                "$ref": "#/definitions/metric"
+              }
+            }
+          }
+        },
+        "tags": [
+          "Metric"
+        ],
+        "security": [
+          {
+            "appid": []
+          },
+          {
+            "appkey": []
+          }
+        ]
+      }
+    },
+    "/resources/": {
+      "get": {
+        "summary": "get resources",
+        "description": "get resources",
+        "operationId": "getResources",
+        "parameters": [
+          {
+            "name": "appid",
+            "in": "query",
+            "description": "your appid for accessing the api",
+            "required": true,
+            "type": "string"
+          },
+          {
+            "name": "appkey",
+            "in": "query",
+            "description": "your appkey for accessing the api",
+            "required": true,
+            "type": "string"
+          },
+          {
+            "name": "name",
+            "in": "query",
+            "description": "name of resource to search for",
+            "required": false,
+            "type": "string"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "resource response",
+            "schema": {
+              "type": "array",
+              "items": {
+                "$ref": "#/definitions/resource"
+              }
+            }
+          }
+        },
+        "tags": [
+          "Resource"
+        ],
+        "security": [
+          {
+            "appid": []
+          },
+          {
+            "appkey": []
+          }
+        ]
+      },
+      "post": {
+        "summary": "add an resource",
+        "description": "add an resource",
+        "operationId": "addResource",
+        "parameters": [
+          {
+            "name": "appid",
+            "in": "query",
+            "description": "your appid for accessing the resource",
+            "required": true,
+            "type": "string"
+          },
+          {
+            "name": "appkey",
+            "in": "query",
+            "description": "your appkey for accessing the resource",
+            "required": true,
+            "type": "string"
+          },
+          {
+            "name": "name",
+            "in": "query",
+            "description": "name of the resource",
+            "required": true,
+            "type": "string"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "resource response",
+            "schema": {
+              "type": "array",
+              "items": {
+                "$ref": "#/definitions/resource"
+              }
+            }
+          }
+        },
+        "tags": [
+          "Resource"
+        ],
+        "security": [
+          {
+            "appid": []
+          },
+          {
+            "appkey": []
+          }
+        ]
+      }
+    },
+    "/timeframes/": {
+      "get": {
+        "summary": "get timeframes",
+        "description": "get timeframes",
+        "operationId": "getTimeframe",
+        "parameters": [
+          {
+            "name": "appid",
+            "in": "query",
+            "description": "your appid for accessing the api",
+            "required": true,
+            "type": "string"
+          },
+          {
+            "name": "appkey",
+            "in": "query",
+            "description": "your appkey for accessing the api",
+            "required": true,
+            "type": "string"
+          },
+          {
+            "name": "name",
+            "in": "query",
+            "description": "name of timeframe to search for",
+            "required": false,
+            "type": "string"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "timeframe response",
+            "schema": {
+              "type": "array",
+              "items": {
+                "$ref": "#/definitions/timeframe"
+              }
+            }
+          }
+        },
+        "tags": [
+          "Timeframe"
+        ],
+        "security": [
+          {
+            "appid": []
+          },
+          {
+            "appkey": []
+          }
+        ]
+      },
+      "post": {
+        "summary": "add an timeframe",
+        "description": "add a timeframet",
+        "operationId": "addTimeframe",
+        "parameters": [
+          {
+            "name": "appid",
+            "in": "query",
+            "description": "your appid for accessing the timeframe",
+            "required": true,
+            "type": "string"
+          },
+          {
+            "name": "appkey",
+            "in": "query",
+            "description": "your appkey for accessing the timeframe",
+            "required": true,
+            "type": "string"
+          },
+          {
+            "name": "name",
+            "in": "query",
+            "description": "name of the timeframe",
+            "required": true,
+            "type": "string"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "timeframe response",
+            "schema": {
+              "type": "array",
+              "items": {
+                "$ref": "#/definitions/timeframe"
+              }
+            }
+          }
+        },
+        "tags": [
+          "Timeframe"
+        ],
+        "security": [
+          {
+            "appid": []
+          },
+          {
+            "appkey": []
+          }
+        ]
+      }
+    },
+    "/host/{host}/": {
+      "get": {
+        "summary": "get host",
+        "description": "get host",
+        "operationId": "getHost",
+        "parameters": [
+          {
+            "name": "appid",
+            "in": "query",
+            "description": "your appid for accessing the api",
+            "required": true,
+            "type": "string"
+          },
+          {
+            "name": "appkey",
+            "in": "query",
+            "description": "your appkey for accessing the api",
+            "required": true,
+            "type": "string"
+          },
+          {
+            "name": "host",
+            "in": "path",
+            "description": "the host to return",
+            "required": true,
+            "type": "string"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "host response",
+            "schema": {
+              "type": "array",
+              "items": {
+                "$ref": "#/definitions/host"
+              }
+            }
+          }
+        },
+        "tags": [
+          "Host"
+        ],
+        "security": [
+          {
+            "appid": []
+          },
+          {
+            "appkey": []
+          }
+        ]
+      },
+      "post": {
+        "summary": "add a host",
+        "description": "add a host",
+        "operationId": "addHost",
+        "parameters": [
+          {
+            "name": "appid",
+            "in": "query",
+            "description": "your appid for accessing the api",
+            "required": true,
+            "type": "string"
+          },
+          {
+            "name": "appkey",
+            "in": "query",
+            "description": "your appkey for accessing the api",
+            "required": true,
+            "type": "string"
+          },
+          {
+            "name": "host",
+            "in": "path",
+            "description": "the host to return",
+            "required": true,
+            "type": "string"
+          },
+          {
+            "name": "coupling",
+            "in": "query",
+            "description": "the coupling for the host",
+            "required": true,
+            "type": "string"
+          },
+          {
+            "name": "name",
+            "in": "query",
+            "description": "the name of the host",
+            "required": true,
+            "type": "string"
+          },
+          {
+            "name": "host",
+            "in": "query",
+            "description": "the host path",
+            "required": true,
+            "type": "string"
+          },
+          {
+            "name": "baseurl",
+            "in": "query",
+            "description": "the base url for the host",
+            "required": true,
+            "type": "string"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "host response",
+            "schema": {
+              "type": "array",
+              "items": {
+                "$ref": "#/definitions/host"
+              }
+            }
+          }
+        },
+        "tags": [
+          "Host"
+        ],
+        "security": [
+          {
+            "appid": []
+          },
+          {
+            "appkey": []
+          }
+        ]
+      }
+    },
+    "/host/{host}/elements/": {
+      "post": {
+        "summary": "add host elements",
+        "description": "add host elements",
+        "operationId": "addHostElement",
+        "parameters": [
+          {
+            "name": "appid",
+            "in": "formData",
+            "description": "your appid for accessing the api",
+            "required": true,
+            "type": "string"
+          },
+          {
+            "name": "appkey",
+            "in": "formData",
+            "description": "your appkey for accessing the api",
+            "required": true,
+            "type": "string"
+          },
+          {
+            "name": "host",
+            "in": "path",
+            "description": "the host to add element for",
+            "required": true,
+            "type": "string"
+          },
+          {
+            "name": "name",
+            "in": "formData",
+            "description": "the host element name",
+            "required": true,
+            "type": "string"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "host element response",
+            "schema": {
+              "type": "array",
+              "items": {
+                "$ref": "#/definitions/hostelement"
+              }
+            }
+          }
+        },
+        "tags": [
+          "Host Element"
+        ],
+        "security": [
+          {
+            "appid": []
+          },
+          {
+            "appkey": []
+          }
+        ]
+      }
+    },
+    "/host/{host}/elements/{name}/": {
+      "delete": {
+        "summary": "delete host element",
+        "description": "delete host element",
+        "operationId": "deleteHostElement",
+        "parameters": [
+          {
+            "name": "appid",
+            "in": "query",
+            "description": "your appid for accessing the api",
+            "required": true,
+            "type": "string"
+          },
+          {
+            "name": "appkey",
+            "in": "query",
+            "description": "your appkey for accessing the api",
+            "required": true,
+            "type": "string"
+          },
+          {
+            "name": "host",
+            "in": "path",
+            "description": "the host to delete element for",
+            "required": true,
+            "type": "string"
+          },
+          {
+            "name": "name",
+            "in": "path",
+            "description": "the name of element to delete",
+            "required": true,
+            "type": "string"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "host element response",
+            "schema": {
+              "type": "array",
+              "items": {
+                "$ref": "#/definitions/hostelement"
+              }
+            }
+          }
+        },
+        "tags": [
+          "Host Element"
+        ],
+        "security": [
+          {
+            "appid": []
+          },
+          {
+            "appkey": []
+          }
+        ]
+      }
+    },
+    "/host/{host}/extensions/": {
+      "post": {
+        "summary": "add a host extension",
+        "description": "add a host extention",
+        "operationId": "addHostExtension",
+        "parameters": [
+          {
+            "name": "appid",
+            "in": "formData",
+            "description": "your appid for accessing the api",
+            "required": true,
+            "type": "string"
+          },
+          {
+            "name": "appkey",
+            "in": "formData",
+            "description": "your appkey for accessing the api",
+            "required": true,
+            "type": "string"
+          },
+          {
+            "name": "host",
+            "in": "path",
+            "description": "the host to delete extension for",
+            "required": true,
+            "type": "string"
+          },
+          {
+            "name": "name",
+            "in": "formData",
+            "description": "the name for the extension",
+            "required": true,
+            "type": "string"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "host extension response",
+            "schema": {
+              "type": "array",
+              "items": {
+                "$ref": "#/definitions/hostextension"
+              }
+            }
+          }
+        },
+        "tags": [
+          "Host Extension"
+        ],
+        "security": [
+          {
+            "appid": []
+          },
+          {
+            "appkey": []
+          }
+        ]
+      }
+    },
+    "/host/{host}/extensions/{name}/": {
+      "delete": {
+        "summary": "delete a host extension",
+        "description": "delete a host extension",
+        "operationId": "deleteHostExtension",
+        "parameters": [
+          {
+            "name": "appid",
+            "in": "query",
+            "description": "your appid for accessing the api",
+            "required": true,
+            "type": "string"
+          },
+          {
+            "name": "appkey",
+            "in": "query",
+            "description": "your appkey for accessing the api",
+            "required": true,
+            "type": "string"
+          },
+          {
+            "name": "host",
+            "in": "path",
+            "description": "the host to delete extension for",
+            "required": true,
+            "type": "string"
+          },
+          {
+            "name": "name",
+            "in": "path",
+            "description": "the name of the extension to delete",
+            "required": true,
+            "type": "string"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "host extension response",
+            "schema": {
+              "type": "array",
+              "items": {
+                "$ref": "#/definitions/hostextension"
+              }
+            }
+          }
+        },
+        "tags": [
+          "Host Extension"
+        ],
+        "security": [
+          {
+            "appid": []
+          },
+          {
+            "appkey": []
+          }
+        ]
+      }
+    },
+    "/host/{host}/geo/": {
+      "post": {
+        "summary": "add a host geo entry",
+        "description": "add a host geo entry",
+        "operationId": "addHostGeo",
+        "parameters": [
+          {
+            "name": "appid",
+            "in": "formData",
+            "description": "your appid for accessing the api",
+            "required": true,
+            "type": "string"
+          },
+          {
+            "name": "appkey",
+            "in": "formData",
+            "description": "your appkey for accessing the api",
+            "required": true,
+            "type": "string"
+          },
+          {
+            "name": "host",
+            "in": "path",
+            "description": "the host to add a geo for",
+            "required": true,
+            "type": "string"
+          },
+          {
+            "name": "name",
+            "in": "formData",
+            "description": "name of the geo entry",
+            "required": true,
+            "type": "string"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "host geo response",
+            "schema": {
+              "type": "array",
+              "items": {
+                "$ref": "#/definitions/hostgeo"
+              }
+            }
+          }
+        },
+        "tags": [
+          "Host Geo"
+        ],
+        "security": [
+          {
+            "appid": []
+          },
+          {
+            "appkey": []
+          }
+        ]
+      }
+    },
+    "/host/{host}/geo/{name}/": {
+      "delete": {
+        "summary": "delete a geo",
+        "description": "delete a geo",
+        "operationId": "deleteGeo",
+        "parameters": [
+          {
+            "name": "appid",
+            "in": "query",
+            "description": "your appid for accessing the api",
+            "required": true,
+            "type": "string"
+          },
+          {
+            "name": "appkey",
+            "in": "query",
+            "description": "your appkey for accessing the api",
+            "required": true,
+            "type": "string"
+          },
+          {
+            "name": "host",
+            "in": "path",
+            "description": "the host to delete geo entry for",
+            "required": true,
+            "type": "string"
+          },
+          {
+            "name": "name",
+            "in": "path",
+            "description": "name of geo entry to delete",
+            "required": true,
+            "type": "string"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "host geo response",
+            "schema": {
+              "type": "array",
+              "items": {
+                "$ref": "#/definitions/hostgeo"
+              }
+            }
+          }
+        },
+        "tags": [
+          "Host Geo"
+        ],
+        "security": [
+          {
+            "appid": []
+          },
+          {
+            "appkey": []
+          }
+        ]
+      }
+    },
+    "/host/{host}/metrics/": {
+      "post": {
+        "summary": "add a host metric",
+        "description": "add a host metric",
+        "operationId": "addHostMetric",
+        "parameters": [
+          {
+            "name": "appid",
+            "in": "formData",
+            "description": "your appid for accessing the api",
+            "required": true,
+            "type": "string"
+          },
+          {
+            "name": "appkey",
+            "in": "formData",
+            "description": "your appkey for accessing the api",
+            "required": true,
+            "type": "string"
+          },
+          {
+            "name": "host",
+            "in": "path",
+            "description": "the host to add metric for",
+            "required": true,
+            "type": "string"
+          },
+          {
+            "name": "name",
+            "in": "formData",
+            "description": "name of the metric",
+            "required": true,
+            "type": "string"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "host metric response",
+            "schema": {
+              "type": "array",
+              "items": {
+                "$ref": "#/definitions/hostmetric"
+              }
+            }
+          }
+        },
+        "tags": [
+          "Host Metric"
+        ],
+        "security": [
+          {
+            "appid": []
+          },
+          {
+            "appkey": []
+          }
+        ]
+      }
+    },
+    "/host/{host}/metrics/{name}/": {
+      "delete": {
+        "summary": "delete a metric",
+        "description": "delete a metric",
+        "operationId": "deleteMetric",
+        "parameters": [
+          {
+            "name": "appid",
+            "in": "query",
+            "description": "your appid for accessing the api",
+            "required": true,
+            "type": "string"
+          },
+          {
+            "name": "appkey",
+            "in": "query",
+            "description": "your appkey for accessing the api",
+            "required": true,
+            "type": "string"
+          },
+          {
+            "name": "host",
+            "in": "path",
+            "description": "the host to delete metric for",
+            "required": true,
+            "type": "string"
+          },
+          {
+            "name": "name",
+            "in": "path",
+            "description": "name of metric to delete",
+            "required": true,
+            "type": "string"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "host metric response",
+            "schema": {
+              "type": "array",
+              "items": {
+                "$ref": "#/definitions/hostmetric"
+              }
+            }
+          }
+        },
+        "tags": [
+          "Host Metric"
+        ],
+        "security": [
+          {
+            "appid": []
+          },
+          {
+            "appkey": []
+          }
+        ]
+      }
+    },
+    "/host/{host}/limits/": {
+      "post": {
+        "summary": "add a limit",
+        "description": "add a limit",
+        "operationId": "addLimit",
+        "parameters": [
+          {
+            "name": "appid",
+            "in": "query",
+            "description": "your appid for accessing the api",
+            "required": true,
+            "type": "string"
+          },
+          {
+            "name": "appkey",
+            "in": "query",
+            "description": "your appkey for accessing the api",
+            "required": true,
+            "type": "string"
+          },
+          {
+            "name": "host",
+            "in": "path",
+            "description": "the host to add limit for",
+            "required": true,
+            "type": "string"
+          },
+          {
+            "name": "name",
+            "in": "formData",
+            "description": "name of the limit to add",
+            "required": true,
+            "type": "string"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "host limit response",
+            "schema": {
+              "type": "array",
+              "items": {
+                "$ref": "#/definitions/hostlimit"
+              }
+            }
+          }
+        },
+        "tags": [
+          "Host Limit"
+        ],
+        "security": [
+          {
+            "appid": []
+          },
+          {
+            "appkey": []
+          }
+        ]
+      }
+    },
+    "/host/{host}/limits/{name}/": {
+      "delete": {
+        "summary": "delete limit",
+        "description": "delete limit",
+        "operationId": "deleteLimit",
+        "parameters": [
+          {
+            "name": "appid",
+            "in": "query",
+            "description": "your appid for accessing the api",
+            "required": true,
+            "type": "string"
+          },
+          {
+            "name": "appkey",
+            "in": "query",
+            "description": "your appkey for accessing the api",
+            "required": true,
+            "type": "string"
+          },
+          {
+            "name": "host",
+            "in": "path",
+            "description": "the host to delete limit for",
+            "required": true,
+            "type": "string"
+          },
+          {
+            "name": "name",
+            "in": "path",
+            "description": "name of limit to delete",
+            "required": true,
+            "type": "string"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "host limit response",
+            "schema": {
+              "type": "array",
+              "items": {
+                "$ref": "#/definitions/hostlimit"
+              }
+            }
+          }
+        },
+        "tags": [
+          "Host Limit"
+        ],
+        "security": [
+          {
+            "appid": []
+          },
+          {
+            "appkey": []
+          }
+        ]
+      }
+    },
+    "/host/{host}/plans/": {
+      "get": {
+        "summary": "get host plan",
+        "description": "get host plan",
+        "operationId": "getHostPlan",
+        "parameters": [
+          {
+            "name": "appid",
+            "in": "query",
+            "description": "your appid for accessing the api",
+            "required": true,
+            "type": "string"
+          },
+          {
+            "name": "appkey",
+            "in": "query",
+            "description": "your appkey for accessing the api",
+            "required": true,
+            "type": "string"
+          },
+          {
+            "name": "host",
+            "in": "path",
+            "description": "the host to return plan for",
+            "required": true,
+            "type": "string"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "host plan response",
+            "schema": {
+              "type": "array",
+              "items": {
+                "$ref": "#/definitions/hostplan"
+              }
+            }
+          }
+        },
+        "tags": [
+          "Host Plan"
+        ],
+        "security": [
+          {
+            "appid": []
+          },
+          {
+            "appkey": []
+          }
+        ]
+      },
+      "post": {
+        "summary": "add a host plan",
+        "description": "add a host plan",
+        "operationId": "addHostPlan",
+        "parameters": [
+          {
+            "name": "appid",
+            "in": "formData",
+            "description": "your appid for accessing the api",
+            "required": true,
+            "type": "string"
+          },
+          {
+            "name": "appkey",
+            "in": "formData",
+            "description": "your appkey for accessing the api",
+            "required": true,
+            "type": "string"
+          },
+          {
+            "name": "host",
+            "in": "path",
+            "description": "the host to return plan for",
+            "required": true,
+            "type": "string"
+          },
+          {
+            "name": "name",
+            "in": "formData",
+            "description": "the name of the host plan",
+            "required": true,
+            "type": "string"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "host plan response",
+            "schema": {
+              "type": "array",
+              "items": {
+                "$ref": "#/definitions/hostplan"
+              }
+            }
+          }
+        },
+        "tags": [
+          "Host Plan"
+        ],
+        "security": [
+          {
+            "appid": []
+          },
+          {
+            "appkey": []
+          }
+        ]
+      }
+    },
+    "/host/{host}/plans/{host_plan_id}/": {
+      "delete": {
+        "summary": "delete host plan",
+        "description": "delete host plan",
+        "operationId": "deleteHostPlan",
+        "parameters": [
+          {
+            "name": "appid",
+            "in": "query",
+            "description": "your appid for accessing the api",
+            "required": true,
+            "type": "string"
+          },
+          {
+            "name": "appkey",
+            "in": "query",
+            "description": "your appkey for accessing the api",
+            "required": true,
+            "type": "string"
+          },
+          {
+            "name": "host",
+            "in": "path",
+            "description": "the host to delete plan for",
+            "required": true,
+            "type": "string"
+          },
+          {
+            "name": "host_plan_id",
+            "in": "path",
+            "description": "the unique id for the plan to delete",
+            "required": true,
+            "type": "string"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "host response",
+            "schema": {
+              "type": "array",
+              "items": {
+                "$ref": "#/definitions/hostplan"
+              }
+            }
+          }
+        },
+        "tags": [
+          "Host Plan"
+        ],
+        "security": [
+          {
+            "appid": []
+          },
+          {
+            "appkey": []
+          }
+        ]
+      }
+    },
+    "/host/{host}/plans/entries/": {
+      "post": {
+        "summary": "add a host plan entry",
+        "description": "add a host plan entry",
+        "operationId": "addHostPlanEntry",
+        "parameters": [
+          {
+            "name": "appid",
+            "in": "query",
+            "description": "your appid for accessing the api",
+            "required": true,
+            "type": "string"
+          },
+          {
+            "name": "appkey",
+            "in": "query",
+            "description": "your appkey for accessing the api",
+            "required": true,
+            "type": "string"
+          },
+          {
+            "name": "host",
+            "in": "path",
+            "description": "the host to plan entry for",
+            "required": true,
+            "type": "string"
+          },
+          {
+            "name": "host_plan_id",
+            "in": "query",
+            "description": "the coupling for the host",
+            "required": true,
+            "type": "string"
+          },
+          {
+            "name": "entry_label",
+            "in": "query",
+            "description": "the label for the plan entry",
+            "required": true,
+            "type": "string"
+          },
+          {
+            "name": "entry_description",
+            "in": "query",
+            "description": "the description for the plan entry",
+            "required": true,
+            "type": "string"
+          },
+          {
+            "name": "entry_metric",
+            "in": "query",
+            "description": "the metric for the plan entry",
+            "required": true,
+            "type": "string"
+          },
+          {
+            "name": "entry_limit",
+            "in": "query",
+            "description": "the limit for the plan entry",
+            "required": true,
+            "type": "string"
+          },
+          {
+            "name": "entry_one",
+            "in": "query",
+            "description": "the first item for the plan entry",
+            "required": true,
+            "type": "string"
+          },
+          {
+            "name": "entry_two",
+            "in": "query",
+            "description": "the second item for the plan entry",
+            "required": true,
+            "type": "string"
+          },
+          {
+            "name": "entry_unit",
+            "in": "query",
+            "description": "the unit for the plan entry",
+            "required": true,
+            "type": "string"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "host plan entry response",
+            "schema": {
+              "type": "array",
+              "items": {
+                "$ref": "#/definitions/hostplanentry"
+              }
+            }
+          }
+        },
+        "tags": [
+          "Host Plan Entry"
+        ],
+        "security": [
+          {
+            "appid": []
+          },
+          {
+            "appkey": []
+          }
+        ]
+      }
+    },
+    "/host/{host}/plans/entries/{host_plan_entry_id}/": {
+      "delete": {
+        "summary": "delete a host plan entry",
+        "description": "delete a host plan entry",
+        "operationId": "deleteHostPlanEntry",
+        "parameters": [
+          {
+            "name": "appid",
+            "in": "query",
+            "description": "your appid for accessing the api",
+            "required": true,
+            "type": "string"
+          },
+          {
+            "name": "appkey",
+            "in": "query",
+            "description": "your appkey for accessing the api",
+            "required": true,
+            "type": "string"
+          },
+          {
+            "name": "host",
+            "in": "path",
+            "description": "the host for the plan entry to delete",
+            "required": true,
+            "type": "string"
+          },
+          {
+            "name": "host_plan_entry_id",
+            "in": "path",
+            "description": "the id for the host plan entry to delete",
+            "required": true,
+            "type": "string"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "host plan entry response",
+            "schema": {
+              "type": "array",
+              "items": {
+                "$ref": "#/definitions/hostplanentry"
+              }
+            }
+          }
+        },
+        "tags": [
+          "Host Plan Entry"
+        ],
+        "security": [
+          {
+            "appid": []
+          },
+          {
+            "appkey": []
+          }
+        ]
+      }
+    },
+    "/host/{host}/plans/elements/": {
+      "post": {
+        "summary": "add a host plan element",
+        "description": "add a host plan element",
+        "operationId": "addHostPlanElement",
+        "parameters": [
+          {
+            "name": "appid",
+            "in": "formData",
+            "description": "your appid for accessing the api",
+            "required": true,
+            "type": "string"
+          },
+          {
+            "name": "appkey",
+            "in": "formData",
+            "description": "your appkey for accessing the api",
+            "required": true,
+            "type": "string"
+          },
+          {
+            "name": "host",
+            "in": "path",
+            "description": "the host address",
+            "required": true,
+            "type": "string"
+          },
+          {
+            "name": "host_plan_id",
+            "in": "formData",
+            "description": "the id for the host plan",
+            "required": true,
+            "type": "string"
+          },
+          {
+            "name": "name",
+            "in": "formData",
+            "description": "name of the element to add to host plan",
+            "required": true,
+            "type": "string"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "host plan element response",
+            "schema": {
+              "type": "array",
+              "items": {
+                "$ref": "#/definitions/hostplanelement"
+              }
+            }
+          }
+        },
+        "tags": [
+          "Host Plan Element"
+        ],
+        "security": [
+          {
+            "appid": []
+          },
+          {
+            "appkey": []
+          }
+        ]
+      }
+    },
+    "/host/{host}/plans/elements/{host_plan_element_id}/": {
+      "delete": {
+        "summary": "delete a host plan element",
+        "description": "delete a host plan element",
+        "operationId": "deleteHostPlanElement",
+        "parameters": [
+          {
+            "name": "appid",
+            "in": "query",
+            "description": "your appid for accessing the api",
+            "required": true,
+            "type": "string"
+          },
+          {
+            "name": "appkey",
+            "in": "query",
+            "description": "your appkey for accessing the api",
+            "required": true,
+            "type": "string"
+          },
+          {
+            "name": "host",
+            "in": "path",
+            "description": "the host for the plan element to delete",
+            "required": true,
+            "type": "string"
+          },
+          {
+            "name": "host_plan_element_id",
+            "in": "path",
+            "description": "the id for the host plan element to delete",
+            "required": true,
+            "type": "string"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "host plan element response",
+            "schema": {
+              "type": "array",
+              "items": {
+                "$ref": "#/definitions/hostplanelement"
+              }
+            }
+          }
+        },
+        "tags": [
+          "Host Plan Element"
+        ],
+        "security": [
+          {
+            "appid": []
+          },
+          {
+            "appkey": []
+          }
+        ]
+      }
+    },
+    "/host/{host}/resources/": {
+      "post": {
+        "summary": "add a host resource",
+        "description": "add a host resource",
+        "operationId": "addHostResource",
+        "parameters": [
+          {
+            "name": "appid",
+            "in": "query",
+            "description": "your appid for accessing the api",
+            "required": true,
+            "type": "string"
+          },
+          {
+            "name": "appkey",
+            "in": "query",
+            "description": "your appkey for accessing the api",
+            "required": true,
+            "type": "string"
+          },
+          {
+            "name": "host",
+            "in": "path",
+            "description": "the host address for the resource",
+            "required": true,
+            "type": "string"
+          },
+          {
+            "name": "name",
+            "in": "formData",
+            "description": "the name of the resource",
+            "required": true,
+            "type": "string"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "host resource response",
+            "schema": {
+              "type": "array",
+              "items": {
+                "$ref": "#/definitions/hostresource"
+              }
+            }
+          }
+        },
+        "tags": [
+          "Host Resource"
+        ],
+        "security": [
+          {
+            "appid": []
+          },
+          {
+            "appkey": []
+          }
+        ]
+      }
+    },
+    "/host/{host}/resources/{name}/": {
+      "delete": {
+        "summary": "delete a host resource",
+        "description": "delete a host resource",
+        "operationId": "deleteHostResource",
+        "parameters": [
+          {
+            "name": "appid",
+            "in": "query",
+            "description": "your appid for accessing the api",
+            "required": true,
+            "type": "string"
+          },
+          {
+            "name": "appkey",
+            "in": "query",
+            "description": "your appkey for accessing the api",
+            "required": true,
+            "type": "string"
+          },
+          {
+            "name": "host",
+            "in": "path",
+            "description": "the host of the resource to delete",
+            "required": true,
+            "type": "string"
+          },
+          {
+            "name": "name",
+            "in": "path",
+            "description": "the name of the host resource to delete",
+            "required": true,
+            "type": "string"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "host resource response",
+            "schema": {
+              "type": "array",
+              "items": {
+                "$ref": "#/definitions/hostresource"
+              }
+            }
+          }
+        },
+        "tags": [
+          "Host Resource"
+        ],
+        "security": [
+          {
+            "appid": []
+          },
+          {
+            "appkey": []
+          }
+        ]
+      }
+    },
+    "/host/{host}/timeframes/": {
+      "post": {
+        "summary": "add a timeline",
+        "description": "add a timeline",
+        "operationId": "addHostTimeline",
+        "parameters": [
+          {
+            "name": "appid",
+            "in": "query",
+            "description": "your appid for accessing the api",
+            "required": true,
+            "type": "string"
+          },
+          {
+            "name": "appkey",
+            "in": "query",
+            "description": "your appkey for accessing the api",
+            "required": true,
+            "type": "string"
+          },
+          {
+            "name": "host",
+            "in": "path",
+            "description": "the host for the timeframe to add",
+            "required": true,
+            "type": "string"
+          },
+          {
+            "name": "name",
+            "in": "query",
+            "description": "the name of the host timeframe to add",
+            "required": true,
+            "type": "string"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "host timeframe response",
+            "schema": {
+              "type": "array",
+              "items": {
+                "$ref": "#/definitions/hosttimeframe"
+              }
+            }
+          }
+        },
+        "tags": [
+          "Host Timeframe"
+        ],
+        "security": [
+          {
+            "appid": []
+          },
+          {
+            "appkey": []
+          }
+        ]
+      }
+    },
+    "/host/{host}/timeframes/{name}/": {
+      "delete": {
+        "summary": "delete a host timeframe",
+        "description": "delete a host timeframe",
+        "operationId": "deleteHostTimeframe",
+        "parameters": [
+          {
+            "name": "appid",
+            "in": "query",
+            "description": "your appid for accessing the api",
+            "required": true,
+            "type": "string"
+          },
+          {
+            "name": "appkey",
+            "in": "query",
+            "description": "your appkey for accessing the api",
+            "required": true,
+            "type": "string"
+          },
+          {
+            "name": "host",
+            "in": "path",
+            "description": "the host of the timeframe to delete",
+            "required": true,
+            "type": "string"
+          },
+          {
+            "name": "name",
+            "in": "path",
+            "description": "the name of the timeframe to delete",
+            "required": true,
+            "type": "string"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "host timeframe response",
+            "schema": {
+              "type": "array",
+              "items": {
+                "$ref": "#/definitions/hosttimeframe"
+              }
+            }
+          }
+        },
+        "tags": [
+          "Host Timeline"
+        ],
+        "security": [
+          {
+            "appid": []
+          },
+          {
+            "appkey": []
+          }
+        ]
+      }
+    }
+  },
+  "securityDefinitions": {
+    "appid": {
+      "type": "apiKey",
+      "name": "appid",
+      "in": "query"
+    },
+    "appkey": {
+      "type": "apiKey",
+      "name": "appkey",
+      "in": "query"
+    }
+  },
+  "definitions": {
+    "element": {
+      "properties": {
+        "element_id": {
+          "description": "unique id of the element",
+          "type": "integer",
+          "format": "id"
+        },
+        "name": {
+          "description": "name of the element",
+          "type": "string"
+        }
+      }
+    },
+    "extension": {
+      "properties": {
+        "element_id": {
+          "description": "unique id of the element",
+          "type": "integer",
+          "format": "id"
+        },
+        "name": {
+          "description": "name of the element",
+          "type": "string"
+        }
+      }
+    },
+    "geo": {
+      "properties": {
+        "element_id": {
+          "description": "unique id of the element",
+          "type": "integer",
+          "format": "id"
+        },
+        "name": {
+          "description": "name of the element",
+          "type": "string"
+        }
+      }
+    },
+    "limit": {
+      "properties": {
+        "element_id": {
+          "description": "unique id of the element",
+          "type": "integer",
+          "format": "id"
+        },
+        "name": {
+          "description": "name of the element",
+          "type": "string"
+        }
+      }
+    },
+    "metric": {
+      "properties": {
+        "element_id": {
+          "description": "unique id of the element",
+          "type": "integer",
+          "format": "id"
+        },
+        "name": {
+          "description": "name of the element",
+          "type": "string"
+        }
+      }
+    },
+    "resource": {
+      "properties": {
+        "element_id": {
+          "description": "unique id of the element",
+          "type": "integer",
+          "format": "id"
+        },
+        "name": {
+          "description": "name of the element",
+          "type": "string"
+        }
+      }
+    },
+    "timeframe": {
+      "properties": {
+        "element_id": {
+          "description": "unique id of the element",
+          "type": "integer",
+          "format": "id"
+        },
+        "name": {
+          "description": "name of the element",
+          "type": "string"
+        }
+      }
+    },
+    "specification": {
+      "properties": {
+        "spec_id": {
+          "description": "unique id of the spec",
+          "type": "integer",
+          "format": "id"
+        },
+        "name": {
+          "description": "name of the spec",
+          "type": "string"
+        }
+      }
+    },
+    "base": {
+      "properties": {
+        "base_id": {
+          "description": "unique id of the spec",
+          "type": "integer",
+          "format": "id"
+        },
+        "name": {
+          "description": "name of the spec",
+          "type": "string"
+        }
+      }
+    },
+    "hostelement": {
+      "properties": {
+        "base_id": {
+          "description": "unique id of the host",
+          "type": "integer",
+          "format": "id"
+        },
+        "name": {
+          "description": "name of the host",
+          "type": "string"
+        }
+      }
+    },
+    "hostextension": {
+      "properties": {
+        "base_id": {
+          "description": "unique id of the host",
+          "type": "integer",
+          "format": "id"
+        },
+        "name": {
+          "description": "name of the host",
+          "type": "string"
+        }
+      }
+    },
+    "hostgeo": {
+      "properties": {
+        "base_id": {
+          "description": "unique id of the host",
+          "type": "integer",
+          "format": "id"
+        },
+        "name": {
+          "description": "name of the host",
+          "type": "string"
+        }
+      }
+    },
+    "hostmetric": {
+      "properties": {
+        "base_id": {
+          "description": "unique id of the host",
+          "type": "integer",
+          "format": "id"
+        },
+        "name": {
+          "description": "name of the host",
+          "type": "string"
+        }
+      }
+    },
+    "hostlimit": {
+      "properties": {
+        "base_id": {
+          "description": "unique id of the host",
+          "type": "integer",
+          "format": "id"
+        },
+        "name": {
+          "description": "name of the host",
+          "type": "string"
+        }
+      }
+    },
+    "hostplan": {
+      "properties": {
+        "base_id": {
+          "description": "unique id of the host",
+          "type": "integer",
+          "format": "id"
+        },
+        "name": {
+          "description": "name of the host",
+          "type": "string"
+        }
+      }
+    },
+    "hostplanentry": {
+      "properties": {
+        "base_id": {
+          "description": "unique id of the host",
+          "type": "integer",
+          "format": "id"
+        },
+        "name": {
+          "description": "name of the host",
+          "type": "string"
+        }
+      }
+    },
+    "hostplanelement": {
+      "properties": {
+        "base_id": {
+          "description": "unique id of the host",
+          "type": "integer",
+          "format": "id"
+        },
+        "name": {
+          "description": "name of the host",
+          "type": "string"
+        }
+      }
+    },
+    "hostresource": {
+      "properties": {
+        "base_id": {
+          "description": "unique id of the host",
+          "type": "integer",
+          "format": "id"
+        },
+        "name": {
+          "description": "name of the host",
+          "type": "string"
+        }
+      }
+    },
+    "hosttimeframe": {
+      "properties": {
+        "base_id": {
+          "description": "unique id of the host",
+          "type": "integer",
+          "format": "id"
+        },
+        "name": {
+          "description": "name of the host",
+          "type": "string"
+        }
+      }
+    },
+    "host": {
+      "properties": {
+        "host_id": {
+          "description": "unique id of the spec",
+          "type": "integer",
+          "format": "id"
+        },
+        "coupling": {
+          "description": "coupling for the host",
+          "type": "string"
+        },
+        "name": {
+          "description": "name of the host",
+          "type": "string"
+        },
+        "host": {
+          "description": "host address",
+          "type": "string"
+        },
+        "baseurl": {
+          "description": "base url for address",
+          "type": "string"
+        }
+      }
+    }
+  }
+}
