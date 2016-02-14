@@ -1,10 +1,9 @@
 var $login = getUrlVar('login');
 
-
-  function deploySwagger()
+function deploySwagger()
   	{
-	  var url = "http://plans.apievangelist.com/api/openapi-spec.json";
-
+	  var $url = "http://plans.apievangelist.com/api/openapi-spec.json";
+    console.log(url);
 	  window.swaggerUi = new SwaggerUi({
 	    url: url,
 	    dom_id: "swagger-ui-container",
