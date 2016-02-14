@@ -19,7 +19,7 @@ function deploySwagger()
 
       $appid = '';
       $appkey = '';
-      
+
 			for (var i=0;i<textboxes.length;i++)
 			 	{
 			    var textbox = textboxes[i];
@@ -44,7 +44,7 @@ function deploySwagger()
 	    onFailure: function(data) {
 	      log("Unable to Load SwaggerUI");
 	    },
-	    docExpansion: "list",
+	    docExpansion: "none",
 	    sorter : "alpha"
 	  });
 
