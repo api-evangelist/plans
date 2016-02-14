@@ -27,7 +27,7 @@
       "properties": [
         {
           "type": "Swagger",
-          "url": "https://api-evangelist.github.io/plans/swagger.json"
+          "url": "http://plans.apievangelist.com/api/openapi-spec.json"
         }
       ],
       "contact": [
