@@ -3,7 +3,9 @@ var $login = getUrlVar('login');
 function deploySwagger()
   	{
 	  var $url = "http://plans.apievangelist.com/api/openapi-spec.json";
+
     console.log($url);
+
 	  window.swaggerUi = new SwaggerUi({
 	    url: $url,
 	    dom_id: "swagger-ui-container",
@@ -39,11 +41,12 @@ function deploySwagger()
 	    onFailure: function(data) {
 	      log("Unable to Load SwaggerUI");
 	    },
-	    docExpansion: "none",
+	    docExpansion: "list",
 	    sorter : "alpha"
 	  });
 
 	  window.swaggerUi.load();
+    
   }
 
 if($login=='1')
