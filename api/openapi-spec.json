@@ -2181,9 +2181,9 @@
     },
     "/host/{host}/timeframes/": {
       "post": {
-        "summary": "add a timeline",
-        "description": "add a timeline",
-        "operationId": "addHostTimeline",
+        "summary": "add a timeframe",
+        "description": "add a timeframe",
+        "operationId": "addHostTimeframe",
         "parameters": [
           {
             "name": "appid",
@@ -2285,7 +2285,7 @@
           }
         },
         "tags": [
-          "Host Timeline"
+          "Host Timeframe"
         ],
         "security": [
           {
