@@ -49,6 +49,8 @@ require_once('m-host-resources-delete.php');
 require_once('m-host-timeframes-post.php');
 require_once('m-host-timeframes-delete.php');
 
+require_once('m-host-pages-post.php');
+
 require_once('m-host-plans-post.php');
 require_once('m-host-plans-delete.php');
 

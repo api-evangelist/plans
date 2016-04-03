@@ -16,11 +16,16 @@ $app->post($route, function ($host) use ($app){
 	if(isset($param['entry_description'])){ $entry_description = mysql_real_escape_string($param['entry_description']); } else { $entry_description = ''; }
 	if(isset($param['entry_metric'])){ $entry_metric = mysql_real_escape_string($param['entry_metric']); } else { $entry_metric = ''; }
 	if(isset($param['entry_limit'])){ $entry_limit = mysql_real_escape_string($param['entry_limit']); } else { $entry_limit = ''; }
+	if(isset($param['entry_timeframe'])){ $entry_timeframe = mysql_real_escape_string($param['entry_timeframe']); } else { $entry_timeframe = ''; }
+	if(isset($param['entry_geo'])){ $entry_geo = mysql_real_escape_string($param['entry_geo']); } else { $entry_geo = ''; }
+	if(isset($param['entry_element'])){ $entry_element = mysql_real_escape_string($param['entry_element']); } else { $entry_element = ''; }
 	if(isset($param['entry_one'])){ $entry_one = mysql_real_escape_string($param['entry_one']); } else { $entry_one = ''; }
 	if(isset($param['entry_two'])){ $entry_two = mysql_real_escape_string($param['entry_two']); } else { $entry_two = ''; }
 	if(isset($param['entry_unit'])){ $entry_unit = mysql_real_escape_string($param['entry_unit']); } else { $entry_unit = ''; }
 
 	$hostlookup = trim(mysql_real_escape_string($hostlookup));	
+
+	$host_plan_id = prepareIdIn($host_plan_id,$host);	
 
 	$hostquery = "SELECT * FROM host WHERE host = '" . $hostlookup . "'";
 	//echo $hostquery . "<br />";
@@ -33,19 +38,19 @@ $app->post($route, function ($host) use ($app){
 		
 		$host_id = $hostitem['host_id'];
 
-  		$entryquery = "SELECT * FROM host_plans_entries WHERE host_plan_id = " . $host_plan_id . " AND label = '" . $entry_label . "'";
+  		//$entryquery = "SELECT * FROM host_plans_entries WHERE host_plan_id = " . $host_plan_id . " AND label = '" . $entry_label . "'";
 		//echo $entryquery . "<br />";
-		$entryresults = mysql_query($entryquery) or die('Query failed: ' . mysql_error());			
-		if($entryresults && mysql_num_rows($entryresults))
-			{	
+		//$entryresults = mysql_query($entryquery) or die('Query failed: ' . mysql_error());			
+		//if($entryresults && mysql_num_rows($entryresults))
+			//{	
 			//$entryresult = mysql_fetch_assoc($entryresults);
-			}
-		else 
-			{
-			$query = "INSERT INTO host_plans_entries(host_plan_id,label,description,entry_metric,entry_limit,entry_one,entry_two,entry_unit) VALUES(" . mysql_real_escape_string($host_plan_id) . ",'" . mysql_real_escape_string($entry_label) . "','" . mysql_real_escape_string($entry_description) . "','" . mysql_real_escape_string($entry_metric) . "','" . mysql_real_escape_string($entry_limit) . "','" . mysql_real_escape_string($entry_one) . "','" . mysql_real_escape_string($entry_two) . "','" . mysql_real_escape_string($entry_unit) . "')";
-			//echo $query . "<br />";
+			//}
+		//else 
+			//{
+			$query = "INSERT INTO host_plans_entries(host_plan_id,label,description,entry_metric,entry_limit,entry_timeframe,entry_geo,entry_element,entry_one,entry_two,entry_unit) VALUES(" . mysql_real_escape_string($host_plan_id) . ",'" . mysql_real_escape_string($entry_label) . "','" . mysql_real_escape_string($entry_description) . "','" . mysql_real_escape_string($entry_metric) . "','" . mysql_real_escape_string($entry_limit) . "','" . mysql_real_escape_string($entry_timeframe) . "','" . mysql_real_escape_string($entry_geo) . "','" . mysql_real_escape_string($entry_element) . "','" . mysql_real_escape_string($entry_one) . "','" . mysql_real_escape_string($entry_two) . "','" . mysql_real_escape_string($entry_unit) . "')";
+			echo $query . "<br />";
 			mysql_query($query) or die('Query failed: ' . mysql_error());	
-			}
+			//}
 			
 		$spec = array();	
 		$spec['plans'] = array();				
@@ -72,7 +77,7 @@ $app->post($route, function ($host) use ($app){
 			while ($item2 = mysql_fetch_assoc($item2result))
 				{
 				$id = $item2['host_plan_entry_id'];	
-				$id = prepareIdOut($id,$host);	
+				$id_out = prepareIdOut($id,$host);	
 				$entry_label = $item2['label'];	
 				$entry_description = $item2['description'];
 				$entry_metric = $item2['entry_metric'];
@@ -85,7 +90,7 @@ $app->post($route, function ($host) use ($app){
 				$entry_unit = $item2['entry_unit'];
 				
 				$E = array();
-				$E['id'] = $id;
+				$E['id'] = $id_out;
 				$E['label'] = $entry_label;
 				$E['description'] = $entry_description;
 				$E['metric'] = $entry_metric;
@@ -108,10 +113,10 @@ $app->post($route, function ($host) use ($app){
 					
 				$name = $item3['name'];
 				$id = $item2['host_plan_element_id'];	
-				$id = prepareIdOut($id,$host);
+				$id_out = prepareIdOut($id,$host);
 				
 				$E = array();
-				$E['id'] = $id;
+				$E['id'] = $id_out;
 				$E['name'] = $name;
 								
 				array_push($plan['elements'], $E);

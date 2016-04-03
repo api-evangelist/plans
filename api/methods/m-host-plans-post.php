@@ -15,7 +15,7 @@ $app->post($route, function ($host) use ($app){
 	$hostlookup = trim(mysql_real_escape_string($hostlookup));	
 
 	$hostquery = "SELECT * FROM host WHERE host = '" . $hostlookup . "'";
-	//echo $hostquery . "<br />";
+	echo $hostquery . "<br />";
 	$hostresult = mysql_query($hostquery) or die('Query failed: ' . mysql_error());
 	
 	if($hostresult && mysql_num_rows($hostresult))
@@ -25,7 +25,7 @@ $app->post($route, function ($host) use ($app){
 		
 		$host_id = $hostitem['host_id'];
 
-  		$entryquery = "SELECT * FROM host_plans WHERE name = '" . $name . "'";
+  		$entryquery = "SELECT * FROM host_plans WHERE name = '" . $name . "' AND host_id = " . $host_id;
 		//echo $entryquery . "<br />";
 		$entryresults = mysql_query($entryquery) or die('Query failed: ' . mysql_error());			
 		if($entryresults && mysql_num_rows($entryresults))

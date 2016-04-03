@@ -5,9 +5,12 @@ $app->get($route, function ($host)  use ($app){
 	$hostlookup = $host;
 
 	$ReturnObject = array();
+	$spec = array();
 
 	$request = $app->request();
  	$param = $request->params();
+
+	if(isset($param['showid'])){ $showid = mysql_real_escape_string($param['showid']); } else { $showid = 1; }
 
 	$hostlookup = trim(mysql_real_escape_string($hostlookup));	
 	
@@ -29,8 +32,6 @@ $app->get($route, function ($host)  use ($app){
 		$host_host = $hostitem['host'];	
 		$host_baseurl = $hostitem['baseurl'];				
 		
-		$spec = array();
-		
 		$spec['coupling'] = $host_coupling;
 		$spec['name'] = $host_name;
 		$spec['host'] = $host_host;
@@ -47,7 +48,10 @@ $app->get($route, function ($host)  use ($app){
 			$id = prepareIdOut($id,$host);
 			
 			$P = array();
-			$P['id'] = $id;
+			if($showid==1)
+				{
+				$P['id'] = $id;
+				}
 			$P['url'] = $url;
 			
 			array_push($spec['pages'], $P);
@@ -63,7 +67,10 @@ $app->get($route, function ($host)  use ($app){
 			$id = prepareIdOut($id,$host);
 			
 			$P = array();
-			$P['id'] = $id;
+			if($showid==1)
+				{			
+				$P['id'] = $id;
+				}
 			$P['name'] = $name;
 			
 			array_push($spec['elements'], $P);				
@@ -79,7 +86,10 @@ $app->get($route, function ($host)  use ($app){
 			$id = prepareIdOut($id,$host);
 			
 			$P = array();
-			$P['id'] = $id;
+			if($showid==1)
+				{			
+				$P['id'] = $id;
+				}
 			$P['name'] = $name;
 			
 			array_push($spec['timeframes'], $P);
@@ -95,7 +105,10 @@ $app->get($route, function ($host)  use ($app){
 			$id = prepareIdOut($id,$host);
 			
 			$P = array();
-			$P['id'] = $id;
+			if($showid==1)
+				{			
+				$P['id'] = $id;
+				}
 			$P['name'] = $name;
 			
 			array_push($spec['metrics'], $P);
@@ -111,7 +124,10 @@ $app->get($route, function ($host)  use ($app){
 			$id = prepareIdOut($id,$host);
 			
 			$P = array();
-			$P['id'] = $id;
+			if($showid==1)
+				{			
+				$P['id'] = $id;
+				}
 			$P['name'] = $name;
 			
 			array_push($spec['geo'], $P);
@@ -127,7 +143,10 @@ $app->get($route, function ($host)  use ($app){
 			$id = prepareIdOut($id,$host);
 			
 			$P = array();
-			$P['id'] = $id;
+			if($showid==1)
+				{			
+				$P['id'] = $id;
+				}
 			$P['name'] = $name;
 			
 			array_push($spec['limits'], $P);
@@ -143,7 +162,10 @@ $app->get($route, function ($host)  use ($app){
 			$id = prepareIdOut($id,$host);
 			
 			$P = array();
-			$P['id'] = $id;
+			if($showid==1)
+				{			
+				$P['id'] = $id;
+				}
 			$P['name'] = $name;
 			
 			array_push($spec['resources'], $P);
@@ -159,7 +181,10 @@ $app->get($route, function ($host)  use ($app){
 			$id = prepareIdOut($id,$host);
 			
 			$P = array();
-			$P['id'] = $id;
+			if($showid==1)
+				{			
+				$P['id'] = $id;
+				}
 			$P['name'] = $name;
 			
 			array_push($spec['extensions'], $P);
@@ -179,7 +204,10 @@ $app->get($route, function ($host)  use ($app){
 			$plan_description = $item['description'];
 			
 			$Plan = array();	
-			$plan['id'] = $host_plan_id_out;
+			if($showid==1)
+				{			
+				$plan['id'] = $host_plan_id_out;
+				}
 			$plan['name'] = $plan_name;
 			$plan['description'] = $plan_description;
 			$plan['entries'] = array();
@@ -203,7 +231,10 @@ $app->get($route, function ($host)  use ($app){
 				$entry_unit = $item2['entry_unit'];
 				
 				$E = array();
-				$E['id'] = $id;
+				if($showid==1)
+					{				
+					$E['id'] = $id;
+					}
 				$E['label'] = $entry_label;
 				$E['description'] = $entry_description;
 				$E['metric'] = $entry_metric;
@@ -229,7 +260,10 @@ $app->get($route, function ($host)  use ($app){
 				$id = prepareIdOut($id,$host);
 				
 				$E = array();
-				$E['id'] = $id;
+				if($showid==1)
+					{				
+					$E['id'] = $id;
+					}
 				$E['name'] = $name;
 								
 				array_push($plan['elements'], $E);
