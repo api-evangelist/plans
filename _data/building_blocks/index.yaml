@@ -1,264 +1,1309 @@
-- building_block_id: load-testing
-  type: Testing
-  category: Core Testing
-  name: Load Testing
-  description: Offer loading testing services for HTTP endpoints.
-  image: >-
-    http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/building-blocks/bw-load-testing.jpeg
-  tags: Testing
-- building_block_id: response-header-inspector
-  type: Testing
-  category: Core Testing
-  name: Response Header Inspector
-  description: Ability to inspect a response header.
-  image: >-
-    http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/building-blocks/bw-inspection.png
-  tags: Testing
-- building_block_id: response-body-inspector
-  type: Testing
-  category: Core Testing
-  name: Response Body Inspector
-  description: Ability to inspect a response body.
-  image: >-
-    http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/building-blocks/bw-inspection.png
-  tags: Testing
-- building_block_id: request-retry
-  type: Testing
-  category: Core Testing
-  name: Request Retry
-  description: Ability to retry a specific request.
-  image: >-
-    http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/building-blocks/bw-retry.png
-  tags: Testing
-- building_block_id: request-sharing
-  type: Testing
-  category: Core Testing
-  name: Request Sharing
-  description: Allow for the sharing of requests.
-  image: >-
-    http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/building-blocks/bw-sharing.jpeg
-  tags: Testing
-- building_block_id: request-playback
-  type: Testing
-  category: Core Testing
-  name: Request Playback
-  description: Enable the playback of a single request.
-  image: >-
-    http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/building-blocks/bw-play.jpg
-  tags: Testing
-- building_block_id: request-scheduling
-  type: Testing
-  category: Core Testing
-  name: Request Scheduling
-  description: Allow for the scheduling of requests at a specific time.
-  image: >-
-    http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/building-blocks/bw-scheduling.jpeg
-  tags: Testing
-- building_block_id: request-compare
-  type: Testing
-  category: Core Testing
-  name: Request Compare
-  description: Allow for the comparing of two requests.
-  image: >-
-    http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/building-blocks/bw-compare.png
-  tags: Testing
-- building_block_id: request-scripting
-  type: Testing
-  category: Core Testing
-  name: Request Scripting
-  description: Provide the ability to script against requests.
-  image: >-
-    http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/building-blocks/bw-html-code.png
-  tags: Testing
-- building_block_id: request-automation
-  type: Testing
-  category: Core Testing
-  name: Request Automation
-  description: Allow for the automation of multiple requests.
-  image: >-
-    http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/building-blocks/bw-clock-gear.png
-  tags: Testing
-- building_block_id: request-commenting
-  type: Testing
-  category: Core Testing
-  name: Request Commenting
-  description: Enabling users to comment on a specific request.
-  image: >-
-    http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/building-blocks/bw-chat.png
-  tags: Testing
-- building_block_id: simulator
-  type: Testing
-  category: Core Testing
-  name: Simulator
-  description: Provide tools for simulating requests.
-  image: >-
-    http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/building-blocks/bw-siimulation.png
-  tags: Testing
-- building_block_id: templates
-  type: Testing
-  category: Core Testing
-  name: Templates
-  description: Offer templates of common or specialized requests.
-  image: >-
-    http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/building-blocks/bw-data-template.png
-  tags: Testing
-- building_block_id: data-scenarios
-  type: Testing
-  category: Core Testing
-  name: Data Scenarios
-  description: Provide specific data scenarios that can be executed.
-  image: >-
-    http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/building-blocks/bw-scenario.png
-  tags: Testing
-- building_block_id: region-based-testing
-  type: Testing
-  category: Targeted Testing
-  name: Region Based Testing
-  description: Allow for testing from a specific region.
-  image: >-
-    http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/building-blocks/bw-region.png
-  tags: Testing
-- building_block_id: provider-based-testing
-  type: Testing
-  category: Targeted Testing
-  name: Provider Based Testing
-  description: Allow for testing from a specific provider
-  image: >-
-    http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/building-blocks/bw-api-provider.png
-  tags: Testing
-- building_block_id: basicauth
-  type: Testing
-  category: Authentication
-  name: Basic-Auth
-  description: Use Basic Auth for authentication.
-  image: >-
-    http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/building-blocks/bw-basic-auth.jpg
-  tags: Testing
-- building_block_id: api-keys
-  type: Testing
-  category: Authentication
-  name: API Keys
-  description: Use API keys for authentication.
-  image: >-
-    http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/building-blocks/bw-key.png
-  tags: Testing
-- building_block_id: oauth
-  type: Testing
-  category: Authentication
-  name: OAuth
-  description: Use OAuth for authentication.
-  image: >-
-    http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/building-blocks/oauth-logo.png
-  tags: Testing
-- building_block_id: collections
-  type: Testing
-  category: Utility
-  name: Collections
-  description: Allow tests to be organized into collections.
-  image: >-
-    http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/building-blocks/bw-collection.png
-  tags: Testing
-- building_block_id: command-line-interface
-  type: Testing
-  category: Utility
-  name: Command Line Interface
-  description: Provide a command line interface for working with tests.
-  image: >-
-    http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/building-blocks/bw-command-line.png
-  tags: Testing
-- building_block_id: teams
-  type: Testing
-  category: Utility
-  name: Teams
-  description: Allow for team interaction when testing.
-  image: >-
-    http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/building-blocks/bw-team-male-female.png
-  tags: Testing
+- building_block_id: dedicated-plans-/-pricing-page
+  type: Plans
+  category: Overview
+  name: Dedicated Plans / Pricing Page
+  description: >-
+    Providing a single landing page, available at a simple URL, with all the
+    information about plans available as part of platform operations. There may
+    be more than one plan overview page available, for example one for SaaS side
+    of offering, one for developers, and another possibly for enterprise or
+    partner consumers.
+  image: ''
+  tags: Plans
+- building_block_id: private
+  type: Plans
+  category: Elements
+  name: Private
+  description: >-
+    Is this plan a private one, available only to a limited audience? While the
+    landing page, or overall portal might be publicly available, the API access
+    itself requires approval, or existing account access before you can get more
+    details. Private APIs are more common than public APIs, but you should think
+    about the pros / cons of keeping things private.
+  image: ''
+  tags: Plans
+- building_block_id: public
+  type: Plans
+  category: Elements
+  name: Public
+  description: >-
+    Is this a publicly available API operation, something that may only apply to
+    some plans? While not all aspects of API operations will be 100% publicly
+    available, there are some elements that anyone from the public can gain
+    access to, even if it is rate limited in some way.
+  image: ''
+  tags: Plans
+- building_block_id: free
+  type: Plans
+  category: Elements
+  name: Free
+  description: >-
+    Is this a free resource, or set of resources, something that may not apply
+    to all plans. Free should be considered even if it is part of a trial, demo,
+    or just a limited level of access by time other metric. Free should be a way
+    to incentivize users to higher level of access, and not damage potential
+    revenue.
+  image: ''
+  tags: Plans
+- building_block_id: trial
+  type: Plans
+  category: Elements
+  name: Trial
+  description: >-
+    Is there a trial period that is limited by number of days, which may not
+    apply to all plans. Not all audiences will respond to trial levels of
+    access, but may work will with incentivizing higher levels of access, and
+    API consumption. Refrain from requiring credit cards for trial levels of
+    access, as it deters signup from abuse by other providers.
+  image: ''
+  tags: Plans
+- building_block_id: demo
+  type: Plans
+  category: Elements
+  name: Demo
+  description: >-
+    This resource or set of resources has a demonstration associated with it,
+    which might apply to multiple plans. Consider the possibilities of offer
+    live, or scheduled demos with overall platform operations, as well as
+    individual planned levels of acess.
+  image: ''
+  tags: Plans
+- building_block_id: access
+  type: Plans
+  category: Elements
+  name: Access
+  description: >-
+    Access should not be taken for granted, requiring you to request access, or
+    elevated access levels. While different levels of API access are common, it
+    is also common to use API access itself as an element of planned API
+    operations.
+  image: ''
+  tags: Plans
+- building_block_id: setup
+  type: Plans
+  category: Elements
+  name: Setup
+  description: >-
+    What are the costs associated with setting up and configuring an account for
+    API access. Whatever time and resources are involved with setting up, or
+    even perceived costs to end-users should be considered. Be careful making
+    setup costs an obstacle for the on-boarding of consumers.
+  image: ''
+  tags: Plans
+- building_block_id: ondemand
+  type: Plans
+  category: Elements
+  name: On-Demand
+  description: >-
+    The resource or set of resources can be deployed, and shut down on demand.
+    Each resource can be evaluated for how long it should be available. With
+    current approaches to virtualizations, it is easier to make API resources
+    available on demand, similar to how Amazon has done with many of their cloud
+    compute resources.
+  image: ''
+  tags: Plans
+- building_block_id: reserved
+  type: Plans
+  category: Elements
+  name: Reserved
+  description: >-
+    There are opportunities to reserve an instance of a resource or set of
+    resources for specific time frames. If the resources are also available
+    on-demand, a complimentary reserved option should also be considered as part
+    of planning operations.
+  image: ''
+  tags: Plans
+- building_block_id: volume
+  type: Plans
+  category: Elements
+  name: Volume
+  description: >-
+    Volume pricing levels are available, with plans based entirely on volume
+    level access to resources. Some platforms operate entirely on volume levels
+    of API access, and levels should be crafted with end consumers in mind, and
+    how they will be consumed, and at what levels.
+  image: ''
+  tags: Plans
+- building_block_id: spot
+  type: Plans
+  category: Elements
+  name: Spot
+  description: >-
+    There is an opportunity to big on resources in a localized or distributed
+    marketplace driven environment. Maybe the demand for a resource changes from
+    week, month, season or otherwise, and allowing for bidding can increase
+    competition for a variety of API resources.
+  image: ''
+  tags: Plans
+- building_block_id: dedicated
+  type: Plans
+  category: Elements
+  name: Dedicated
+  description: >-
+    Resources can be allocated in a dedicated state, remaining available with no
+    downtime, or according to SLA. This element is complimentary to on-demand,
+    and reserved instances, where the resources can be purchased on a dedicated
+    bases. For many API resources dedicated will be the default state, and not
+    worth mentioning unless on-demand, and other elements are available.
+  image: ''
+  tags: Plans
+- building_block_id: infrequent
+  type: Plans
+  category: Elements
+  name: Infrequent
+  description: >-
+    Resources are accessed infrequently, treating them as warehoused, or off to
+    the side. Another side of the resource availability which focuses on these
+    infrequent levels of access, and may allow a users access or plan shift from
+    infrequent, to higher levels, if rate limits are exceeded.
+  image: ''
+  tags: Plans
+- building_block_id: archive
+  type: Plans
+  category: Elements
+  name: Archive
+  description: >-
+    Resources are in an archived state and require very little access, and can
+    be stored in different manner. Like infrequent, archive is mean for maybe
+    one-time access, in future dates. Think of these levels as minimum rate
+    limits, which base pricing not on volume, but only is cheap if minimum
+    thresholds are met.
+  image: ''
+  tags: Plans
+- building_block_id: subscription
+  type: Plans
+  category: Elements
+  name: Subscription
+  description: >-
+    There is a regular, recurring element to accessing a resource, as part of a
+    larger subscription part of, or separated from plans. In addition to the
+    regular usage, a subscription plan usually continues, and has costs
+    associated with it even if there are no calls against the API made.
+  image: ''
+  tags: Plans
+- building_block_id: personal
+  type: Plans
+  category: Elements
+  name: Personal
+  description: >-
+    There is a personal element to a set of resources, meant for the casual
+    user, and probably not developing an application or custom integration.
+    These elements of API access usually involve some way for access APIs for
+    non-developers through API reciprocity services like Zapier, or API
+    aggregation providers like Cloud Elements, and not meant for developers.
+  image: ''
+  tags: Plans
+- building_block_id: commercial
+  type: Plans
+  category: Elements
+  name: Commercial
+  description: >-
+    There is a commercial licensing element to a set of resources, which require
+    additional business or legal requirements. This element may not be cost
+    associated, and just stipulate there are commercial opportunities around an
+    API. These elements may require requesting access, or additional steps
+    before they can become available.
+  image: ''
+  tags: Plans
+- building_block_id: noncommercial
+  type: Plans
+  category: Elements
+  name: Non-Commercial
+  description: >-
+    The platform allows for non-commercial access to resources, which usually
+    means there is additional commercial requirements. Allowing non-profit
+    organizations, researchers, and other potential API consumers the ability to
+    validate their identity, and achieve reduced, or free levels of access can
+    benefit the overall platform reach, and potential marketing engine.
+  image: ''
+  tags: Plans
+- building_block_id: educational
+  type: Plans
+  category: Elements
+  name: Educational
+  description: >-
+    A platform provides considerations for K-12 or higher educational access to
+    resources. Like non-profit levels of access, education can benefit the
+    overall platform reach, and benefit other marketing efforts. Reaching
+    educational users, can lead to future individual, business, or institutional
+    users, and improve the overall platform image.
+  image: ''
+  tags: Plans
+- building_block_id: wholesale
+  type: Plans
+  category: Elements
+  name: Wholesale
+  description: >-
+    There are wholesale options around deploying and accessing resources that
+    are available via a platform. With cloud computing providers like AWS,
+    Heroku, and Google, as well as virtualization technology like Docker,
+    providing wholesale implementations of APIs are growing more possible, and
+    are becoming more commonplace in API plans.
+  image: ''
+  tags: Plans
+- building_block_id: government
+  type: Plans
+  category: Elements
+  name: Government
+  description: >-
+    A set of API resources is available specifically for government access,
+    meeting the specialized needs of local or federal government use.
+    Complimentary to non-profit, and educational elements of access, government
+    considerations are growing more common place for some API providers to
+    offer.
+  image: ''
+  tags: Plans
+- building_block_id: internal
+  type: Plans
+  category: Elements
+  name: Internal
+  description: >-
+    A set of resources are tailored specifically for internal consumption rather
+    than for public or partner level access. Internal APIs, like public ones
+    will usually have a portal available at an Internet URL, but will require
+    additional access before you can see anything related to the API.
+  image: ''
+  tags: Plans
+- building_block_id: partner
+  type: Plans
+  category: Elements
+  name: Partner
+  description: >-
+    There is a focus on partner access to resources, resulting in separate
+    access layers, and features dedicated to partner level consumption. While
+    anyone accessing APIs can be considered a partner, these levels of access
+    usually require much more vetting, making sure business objectives are in
+    alignment, and legal obligations are met. Keeping partner access layers as
+    transparent as possible helps keep harony with lower levels of public, or
+    even internal API access.
+  image: ''
+  tags: Plans
+- building_block_id: reseller
+  type: Plans
+  category: Elements
+  name: Reseller
+  description: >-
+    There are reseller opportunities in place around resources available via the
+    platform, that allow approved API consumers to access resources, as well as
+    resell access to resources. Resellers are paid a fixed amount, or possibly
+    percentages of sales of products and services, which could include accessing
+    and usage of API resources.
+  image: ''
+  tags: Plans
+- building_block_id: venture
+  type: Plans
+  category: Elements
+  name: Venture
+  description: >-
+    There are venture opportunities around a platform and the resources
+    available, allow for investments to be made, or possibly received. API
+    portals are often used as idea incubation area, but some API providers are
+    going further and allowing for direct investment via the platform, opening
+    up the opportunity financially supporting of various aspects of API
+    operations, and products within its ecosystem
+  image: ''
+  tags: Plans
+- building_block_id: type
+  type: Plans
+  category: Elements
+  name: Type
+  description: >-
+    Are there custom types of plans available, with a grouping dimension that
+    goes beyond just the available plans. Thinking of plan types as a sort of
+    categorization, allowing plans to be grouped by other dimensions, for more
+    easily sharing with different groups. Think about separate between SaaS,
+    developer, or possibly enterprise levels of access, and how plans can be
+    organized by type.
+  image: ''
+  tags: Plans
+- building_block_id: features
+  type: Plans
+  category: Elements
+  name: Features
+  description: >-
+    Additional features, usually key / value pairs that can be used to describe
+    addition elements of API access and consumption. The purpose of this
+    research is to identify some of the common elements of how API providers
+    plan their operations, and there will be a long tale of features that I do
+    not capture--these are features.
+  image: ''
+  tags: Plans
+- building_block_id: marketing
+  type: Plans
+  category: Elements
+  name: Marketing
+  description: >-
+    Is a big part of API operations about driving marketing efforts for other
+    aspects of business operations. Direct API access is not always the primary
+    motivation for having an API, especially a public API. There are a number of
+    ways to increase attention to products, services, as well as the overall
+    corporate engine using APIs.  Acknowledging this across API planning is
+    important to understanding the value generated by API consumption, beyond
+    direct elements.
+  image: ''
+  tags: Plans
+- building_block_id: branding
+  type: Plans
+  category: Elements
+  name: Branding
+  description: >-
+    Is there a strong brand aspect to API operations, with clear guidelines,
+    resources, and a presence for the companies brand. It is common to require
+    API consumers to provide brand attribution on their site, and sometimes on
+    web or mobile applications, as part of the API consumption contract.
+    Branding should be reflected as an element for all public APIs, with details
+    about different requirements for different plan levels.
+  image: ''
+  tags: Plans
+- building_block_id: saas
+  type: Plans
+  category: Elements
+  name: SaaS
+  description: >-
+    Is the API operations secondary to a strong SaaS focus for a platform. How
+    does an API add value to a SaaS offering? Considering the relationship
+    between an API, and how it can benefit end-users of the platform is
+    important to establishing a stable plan that can benefit both sides of the
+    operation in harmony.
+  image: ''
+  tags: Plans
+- building_block_id: paas
+  type: Plans
+  category: Elements
+  name: PaaS
+  description: >-
+    Is the API operations secondary to a strong PaaS focus for a platform. How
+    does an API add value to a PaaS offering? Considering the relationship
+    between an API, and how it can benefit end-users of the platform is
+    important to establishing a stable plan that can benefit both sides of the
+    operation in harmony.
+  image: ''
+  tags: Plans
+- building_block_id: traffic
+  type: Plans
+  category: Elements
+  name: Traffic
+  description: >-
+    Is a primary focus of an API platform centered around driving traffic to a
+    web or mobile presence. If there is a solid business model around users
+    accessing content or data, driving traffic through an API, without charging
+    API consumers can be a successful approach.  How can API consumers be
+    incentivized to drive more traffic to web and mobile properties, by
+    extending the reach of the platform through APIs.
+  image: ''
+  tags: Plans
+- building_block_id: content
+  type: Plans
+  category: Elements
+  name: Content
+  description: >-
+    One of the primary objectives for API resources existing is in support of
+    acquiring data and content that fuels platform operations. This is a very
+    common element of successful API platforms that are operating today, such as
+    Crunchbase or Angellist, or even Twitter and Tumblr. These are all examples
+    of platforms where content acquisition is a core element of their API plans.
+  image: ''
+  tags: Plans
+- building_block_id: devices
+  type: Plans
+  category: Elements
+  name: Devices
+  description: >-
+    Situations where APIs are available in support of devices. You can see
+    examples of this with Fitbit or Nest, where they API is just value-add to
+    the devices, allowing 3rd parties to develop applications, and put content
+    or data to use that is generated around the API. This is the layer of the
+    API space that is expanding to what is often called Internet of Things
+    (IoT).
+  image: ''
+  tags: Plans
+- building_block_id: products
+  type: Plans
+  category: Elements
+  name: Products
+  description: >-
+    An API primarily exists to support the existence, or drive the sales of
+    another product, or product line. I separate out devices from this grouping,
+    because they require separate attention. This could describe entire supply
+    chain integration using APIs, all the way to affiliate or reseller style
+    systems like used by Amazon. There are a number of ways products can be
+    sold, by putting APIs to work.
+  image: ''
+  tags: Plans
+- building_block_id: services
+  type: Plans
+  category: Elements
+  name: Services
+  description: >-
+    API resources exist to support other related services, and act as value-add
+    to the primary business focus. This is somewhat duplicate to SaaS or PaaS
+    elements, but more likely is about the delivery of classic services like
+    Uber, TaskRabbit, and other sharing economy solutions are focused on today.
+    How is an API driving the demand of other services, that may not be software
+    based, and bridge into the physical world.
+  image: ''
+  tags: Plans
+- building_block_id: syndication
+  type: Plans
+  category: Elements
+  name: Syndication
+  description: >-
+    API resources exist to encourage syndication of data, content, and other
+    digital resources. How are APIs supporting the syndication of data and
+    content to other public or private locations, something that may overlap
+    with embeddedable aspects of API operations. APIs driven syndication can be
+    seen in popular platforms like Twitter or Facebook.
+  image: ''
+  tags: Plans
+- building_block_id: analytics
+  type: Plans
+  category: Elements
+  name: Analytics
+  description: >-
+    A set of API resources exist to gather, refine, and organize data for the
+    purpose of driving analytics. While these analytics might be also extended
+    to API consumers, as well as end-users, one of the primary elements of API
+    plans is to generate much needed data for use in analytics, increasing the
+    value of a central, or even distribute resources.
+  image: ''
+  tags: Plans
+- building_block_id: reporting
+  type: Plans
+  category: Elements
+  name: Reporting
+  description: >-
+    A set of API resources exist to gather, refine, and organize data for the
+    purpose of driving reporting efforts. Analytics is the intelligence, and
+    reports is the distribution model. Using APIs to drive static, or even
+    dynamic reports that can be published, printed, or delivered via dashboards.
+  image: ''
+  tags: Plans
+- building_block_id: talent
+  type: Plans
+  category: Elements
+  name: Talent
+  description: >-
+    API resources are focused on driving talent acquisition, or even placement
+    with ecosystem related companies or as part of wider services. This could be
+    in support of an actual recruitment platform, or could just be one aspect of
+    what an API platform does to support talent needed internally, by partners,
+    or even end-users of recruitment related services.
+  image: ''
+  tags: Plans
+- building_block_id: security
+  type: Plans
+  category: Elements
+  name: Security
+  description: >-
+    Access to API resources provide a security benefit, or are in support of
+    other related security products and services. There should always be a base
+    level of security to just keep a platform stable, but sometimes additional,
+    or tighter security elements can be factored into the plan for overall
+    platform operations. Security is an ever-increasing aspect of overall
+    platform health and stability.
+  image: ''
+  tags: Plans
+- building_block_id: terms-of-service
+  type: Plans
+  category: Elements
+  name: Terms of Service
+  description: >-
+    API resources allow for the dynamic configuration of available terms of
+    service that cover access and usage of resources. Terms of service will play
+    a key role in defining every element of platforms, so it makes sense that it
+    can be a variable used across API planning decisions, and even allow for it
+    to be part of different levels of plans, allowing TOS to play variable
+    roles, depending on which plan you exist in.
+  image: ''
+  tags: Plans
+- building_block_id: governance
+  type: Plans
+  category: Elements
+  name: Governance
+  description: >-
+    API resources are focused on governance related tasks within a company or
+    possibly a wider industry. For APIs that operate in more heavily regulated
+    spaces, governance will be a pretty big element of planning around APIs.
+    Governance can be applied across API operations, and subject to variability
+    depending on plan levels and partner tiers of access.
+  image: ''
+  tags: Plans
+- building_block_id: donations
+  type: Plans
+  category: Elements
+  name: Donations
+  description: >-
+    API resources allow for, or depend on donations as part of platform
+    operations. Not all APIs will be operating for profit, and will require
+    donations for all, or part of the operational budget. These donations might
+    be large, or they might be smaller from individual API consumers, or
+    possibly end-user groups that benefit from an APIs existence.
+  image: ''
+  tags: Plans
+- building_block_id: grants
+  type: Plans
+  category: Elements
+  name: Grants
+  description: >-
+    API resources exist because of grant related resources, which pay for their
+    design, deployment or operations. Similar to donations, grants could be more
+    formal funding opportunities for certain APIs that provide a civic or public
+    good. Part of the goal in identifying this as a building block, is bringing
+    more focus to the need of some APIs in this area, and drive more grant
+    funding their way.
+  image: ''
+  tags: Plans
+- building_block_id: advertising
+  type: Plans
+  category: Elements
+  name: Advertising
+  description: >-
+    API resources exist in support of advertising related elements of platform
+    operations, driving advertising, or possibly alleviating the need for
+    advertising to be present. The purpose of the APIs might be directly tied to
+    advertising, or be more about helping drive traffic, or attention to
+    resources that depend on advertising for their revenue. This element is
+    focused on how advertising is coupled to API planning, no matter how tight
+    it is.
+  image: ''
+  tags: Plans
 - building_block_id: api
-  type: Testing
-  category: Utility
+  type: Plans
+  category: Elements
   name: API
-  description: Provide an API for all parts of testing platform.
-  image: >-
-    http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/building-blocks/api-commons-icon.png
-  tags: Testing
-- building_block_id: postman
-  type: Testing
-  category: Import
-  name: Postman
-  description: Allow for the importing of APIs with Postman.
-  image: >-
-    http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/building-blocks/bw-postman.png
-  tags: Testing
-- building_block_id: openapi-spec
-  type: Testing
-  category: Import
-  name: OpenAPI Spec
-  description: Allow for the importing of APIs with OpenAPI Spec.
-  image: >-
-    http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/building-blocks/bw-swagger-round.png
-  tags: Testing
-- building_block_id: raml
-  type: Testing
-  category: Import
-  name: RAML
-  description: Allow for the importing of APIs with RAML.
-  image: >-
-    http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/building-blocks/bw-raml.png
-  tags: Testing
-- building_block_id: har
-  type: Testing
-  category: Import
-  name: HAR
-  description: Allow for the importing of APIs with HAR
-  image: >-
-    http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/building-blocks/bw-har-file.png
-  tags: Testing
-- building_block_id: jmeter
-  type: Testing
-  category: 3rd Party
-  name: JMeter
-  description: Provide 3rd party integration with JMeter.
-  image: >-
-    http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/building-blocks/jmeter-logo.jpg
-  tags: Testing
-- building_block_id: selenium
-  type: Testing
-  category: 3rd Party
-  name: Selenium
-  description: Provide 3rd party integration with Selenium.
-  image: >-
-    http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/building-blocks/selenium-icon.png
-  tags: Testing
-- building_block_id: jenkins
-  type: Testing
-  category: 3rd Party
-  name: Jenkins
-  description: Provide 3rd party integration with Jenkins.
-  image: >-
-    http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/building-blocks/jenkins-logo.png
-  tags: Testing
-- building_block_id: teamcity
-  type: Testing
-  category: 3rd Party
-  name: TeamCity
-  description: Provide 3rd party integration with TeamCity.
-  image: >-
-    http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/building-blocks/teamcity_logo.png
-  tags: Testing
-- building_block_id: bamboo
-  type: Testing
-  category: 3rd Party
-  name: Bamboo
-  description: Provide 3rd party integration with Bamboo.
-  image: >-
-    http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/building-blocks/bamboo-icon.png
-  tags: Testing
-- building_block_id: travis
-  type: Testing
-  category: 3rd Party
-  name: Travis
-  description: Provide 3rd party integration with Travis.
-  image: >-
-    http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/building-blocks/travis-mascot-200px.png
-  tags: Testing
+  description: >-
+    There are APIs available to access all or part of the plans, pricing, or
+    limitations around an API platform operations. The API platforms I track on
+    that have been around the longest, and are the most mature, have APIs for
+    consumers to use, that gives access to plan information, rate limits,
+    pricing, and other aspects of API operations. I include this as essential,
+    because it will be something every API provider will need to complete in the
+    future.
+  image: ''
+  tags: Plans
+- building_block_id: organization
+  type: Plans
+  category: Elements
+  name: Organization
+  description: >-
+    There are organizational elements around API access and usage for API
+    consumers to take advantage of. Are API plans organized by organization, or
+    possibly specific access only for a specific group. How does user
+    organizations, groups, and other ways to categorize API consumption applied
+    at the API planning level?
+  image: ''
+  tags: Plans
+- building_block_id: customization
+  type: Plans
+  category: Elements
+  name: Customization
+  description: >-
+    There are customization opportunities around API plans, pricing, and rate
+    limits, giving more control to consumers to customize their experience. For
+    many plans, things may be fixed, but as you go further up the chain, into
+    enterprise and partner level tiers, there may be opportunities for
+    customization of plan elements, where other users do not have the
+    opportunity.
+  image: ''
+  tags: Plans
+- building_block_id: seconds
+  type: Plans
+  category: Timeframes
+  name: Seconds
+  description: >-
+    Managing, guiding, and restricting plan entries in seconds. This is a common
+    timeframe for considering rate limits, and judging the overall volume
+    requirements of different users. Availability in seconds is often directly
+    linked to compute resources being applied as part of operations, and tie in
+    with overall availability.
+  image: ''
+  tags: Plans
+- building_block_id: minutes
+  type: Plans
+  category: Timeframes
+  name: Minutes
+  description: >-
+    Managing, guiding, and restricting plan entries in minutes. Like seconds
+    this is a common timeframe for considering rate limits, and judging the
+    overall volume requirements of different users. Availability in seconds is
+    often directly linked to compute resources being applied as part of
+    operations, and tie in with overall availability.
+  image: ''
+  tags: Plans
+- building_block_id: hourly
+  type: Plans
+  category: Timeframes
+  name: Hourly
+  description: >-
+    Managing, guiding, and restricting plan entries in hours. While there may be
+    rate limits at the hourly level, this timeframe is more applied to resources
+    that are on-demand and ephemeral, and can be consumed as needed, in a
+    utility style that is becoming common way to plan API access.
+  image: ''
+  tags: Plans
+- building_block_id: daily
+  type: Plans
+  category: Timeframes
+  name: Daily
+  description: >-
+    Managing, guiding, and restricting plan entries in days. Like seconds and
+    minutes this is a common timeframe for considering rate limits, and judging
+    the overall volume requirements of different users. Availability in seconds
+    is often directly linked to compute resources being applied as part of
+    operations, and tie in with overall availability.
+  image: ''
+  tags: Plans
+- building_block_id: weekly
+  type: Plans
+  category: Timeframes
+  name: Weekly
+  description: >-
+    Managing, guiding, and restricting plan entries in weeks. This timeframe is
+    more used to organizing billing and support cycles, organizing resource
+    usage and services rendered within the weekly time period, and aligning
+    billing, and other aspects to this timeframe.
+  image: ''
+  tags: Plans
+- building_block_id: monthly
+  type: Plans
+  category: Timeframes
+  name: Monthly
+  description: >-
+    Managing, guiding, and restricting plan entries in months. Like weekly, this
+    timeframe is more used to organizing billing and support cycles, organizing
+    resource usage and services rendered within the weekly time period, and
+    aligning billing, and other aspects to this timeframe.
+  image: ''
+  tags: Plans
+- building_block_id: quarterly
+  type: Plans
+  category: Timeframes
+  name: Quarterly
+  description: >-
+    Managing, guiding, and restricting plan entries in quarters. Like monthly,
+    and weekly, this timeframe is more used to organizing billing and support
+    cycles, organizing resource usage and services rendered within the weekly
+    time period, and aligning billing, and other aspects to this timeframe.
+  image: ''
+  tags: Plans
+- building_block_id: annually
+  type: Plans
+  category: Timeframes
+  name: Annually
+  description: >-
+    Managing, guiding, and restricting plan entries in years.  Like quarterly,
+    monthly, and weekly, this timeframe is more used to organizing billing and
+    support cycles, organizing resource usage and services rendered within the
+    weekly time period, and aligning billing, and other aspects to this
+    timeframe.
+  image: ''
+  tags: Plans
+- building_block_id: access
+  type: Plans
+  category: Metrics
+  name: Access
+  description: >-
+    Where access to an API is on the table, and might not be publicly available,
+    or part of all plans. Differing from API access as an element, this is about
+    actually limiting entire APIs from various groups and plans, and allowing it
+    to be metered as part of overall measurements.
+  image: ''
+  tags: Plans
+- building_block_id: calls
+  type: Plans
+  category: Metrics
+  name: Calls
+  description: 'The most fundamental metric for APIs, the API call.'
+  image: ''
+  tags: Plans
+- building_block_id: value
+  type: Plans
+  category: Metrics
+  name: Value
+  description: >-
+    What is the value of an API or endpoint, is it simple 1, or maybe 10,
+    allowing for multiple value settings.
+  image: ''
+  tags: Plans
+- building_block_id: transaction
+  type: Plans
+  category: Metrics
+  name: Transaction
+  description: >-
+    Allow for the concept of transactions to exist which may span multiple API
+    calls, moving a single concept forward.
+  image: ''
+  tags: Plans
+- building_block_id: count
+  type: Plans
+  category: Metrics
+  name: Count
+  description: >-
+    Tracking by the count of something, could be API calls, files, or any other
+    county of objects that are part of API operations.
+  image: ''
+  tags: Plans
+- building_block_id: instances
+  type: Plans
+  category: Metrics
+  name: Instances
+  description: >-
+    Allowing for instances of resources that are available via an API platform,
+    and can be used in different ways within existing plans.
+  image: ''
+  tags: Plans
+- building_block_id: matches
+  type: Plans
+  category: Metrics
+  name: Matches
+  description: >-
+    Allowing for the measurement of API access in terms of when pre-defined
+    matches are returned, rather than all of the results.
+  image: ''
+  tags: Plans
+- building_block_id: message
+  type: Plans
+  category: Metrics
+  name: Message
+  description: >-
+    Charging per message rather than each API call that is required to prepare,
+    send, or access messages.
+  image: ''
+  tags: Plans
+- building_block_id: volume
+  type: Plans
+  category: Metrics
+  name: Volume
+  description: >-
+    Volume is used as a basic measurement of how consumers can access API,
+    providing a standard set of pricing, as well as volume pricing.
+  image: ''
+  tags: Plans
+- building_block_id: compute
+  type: Plans
+  category: Metrics
+  name: Compute
+  description: Providing API resource access based upon various levels of compute power.
+  image: ''
+  tags: Plans
+- building_block_id: load-balancing
+  type: Plans
+  category: Metrics
+  name: Load Balancing
+  description: >-
+    Measurement of resource usage, based upon the amount of load balancing that
+    occurs.
+  image: ''
+  tags: Plans
+- building_block_id: operating-system
+  type: Plans
+  category: Metrics
+  name: Operating System
+  description: >-
+    Measurement of resources, based upon the operating system for compute
+    resources.
+  image: ''
+  tags: Plans
+- building_block_id: storage
+  type: Plans
+  category: Metrics
+  name: Storage
+  description: Measuring API resources based upon the size on the disk.
+  image: ''
+  tags: Plans
+- building_block_id: uploads
+  type: Plans
+  category: Metrics
+  name: Uploads
+  description: Restricting and measuring API access based upon the number of file uploads.
+  image: ''
+  tags: Plans
+- building_block_id: upload-size
+  type: Plans
+  category: Metrics
+  name: Upload Size
+  description: Restricting and measuring API access based upon file upload size.
+  image: ''
+  tags: Plans
+- building_block_id: upload-speed
+  type: Plans
+  category: Metrics
+  name: Upload Speed
+  description: Restricting and measuring API access based upon file upload speed.
+  image: ''
+  tags: Plans
+- building_block_id: records
+  type: Plans
+  category: Metrics
+  name: Records
+  description: Measuring API access based upon the number of records accessed or returned.
+  image: ''
+  tags: Plans
+- building_block_id: containers
+  type: Plans
+  category: Metrics
+  name: Containers
+  description: >-
+    Measuring API access based upon the number of folders, buckets or virtual
+    containers deployed.
+  image: ''
+  tags: Plans
+- building_block_id: transcripts
+  type: Plans
+  category: Metrics
+  name: Transcripts
+  description: Measuring API access based upon the transcripts generated.
+  image: ''
+  tags: Plans
+- building_block_id: bandwidth
+  type: Plans
+  category: Metrics
+  name: Bandwidth
+  description: Measuring API access based upon the amount of bandwidth used.
+  image: ''
+  tags: Plans
+- building_block_id: connections
+  type: Plans
+  category: Metrics
+  name: Connections
+  description: >-
+    Measuring API access based upon the number of connections or threads made to
+    resources.
+  image: ''
+  tags: Plans
+- building_block_id: simulations
+  type: Plans
+  category: Metrics
+  name: Simulations
+  description: Measuring API access based upon the number of simulations generated.
+  image: ''
+  tags: Plans
+- building_block_id: transfers
+  type: Plans
+  category: Metrics
+  name: Transfers
+  description: Measuring API access based upon the number of transfers that are executed.
+  image: ''
+  tags: Plans
+- building_block_id: transfer-limits
+  type: Plans
+  category: Metrics
+  name: Transfer Limits
+  description: Using the ability to change transfer limits as a metric in API consumption.
+  image: ''
+  tags: Plans
+- building_block_id: sync
+  type: Plans
+  category: Metrics
+  name: Sync
+  description: >-
+    Measurement for API consumption based upon the number of syncs that are
+    exected.
+  image: ''
+  tags: Plans
+- building_block_id: conversions
+  type: Plans
+  category: Metrics
+  name: Conversions
+  description: >-
+    Measurement for API consumption based upon the number of conversions that
+    are executed.
+  image: ''
+  tags: Plans
+- building_block_id: syndication
+  type: Plans
+  category: Metrics
+  name: Syndication
+  description: Measurement for API consumption based upon how much syndication occurs.
+  image: ''
+  tags: Plans
+- building_block_id: connectors
+  type: Plans
+  category: Metrics
+  name: Connectors
+  description: >-
+    Measuring API access baed upon the number of connectors that are employed,
+    or part of account access.
+  image: ''
+  tags: Plans
+- building_block_id: relationships
+  type: Plans
+  category: Metrics
+  name: Relationships
+  description: >-
+    Measuring API access baed upon the number of relationships between users and
+    objects that are established or accessed.
+  image: ''
+  tags: Plans
+- building_block_id: migrations
+  type: Plans
+  category: Metrics
+  name: Migrations
+  description: Measurement of API accessed based upon the number of migrations that occur.
+  image: ''
+  tags: Plans
+- building_block_id: archives
+  type: Plans
+  category: Metrics
+  name: Archives
+  description: >-
+    Measurement of API accessed based upon the number of archives that are
+    created.
+  image: ''
+  tags: Plans
+- building_block_id: rollback
+  type: Plans
+  category: Metrics
+  name: Rollback
+  description: >-
+    Measurement of API accessed based upon the number of rollbacks that are
+    executed.
+  image: ''
+  tags: Plans
+- building_block_id: tasks
+  type: Plans
+  category: Metrics
+  name: Tasks
+  description: >-
+    Using the number of tasks that are started or completed as a measurement of
+    API access.
+  image: ''
+  tags: Plans
+- building_block_id: events
+  type: Plans
+  category: Metrics
+  name: Events
+  description: >-
+    Measuring of API consumption based upon the number of events that occur or
+    are triggered.
+  image: ''
+  tags: Plans
+- building_block_id: trainings
+  type: Plans
+  category: Metrics
+  name: Trainings
+  description: Measurement based upon the number of trainings that occur around API access.
+  image: ''
+  tags: Plans
+- building_block_id: maintenance
+  type: Plans
+  category: Metrics
+  name: Maintenance
+  description: >-
+    Measuring maintenance events that occur, and affecting API consumption based
+    upon.
+  image: ''
+  tags: Plans
+- building_block_id: latency
+  type: Plans
+  category: Metrics
+  name: Latency
+  description: >-
+    Measuring the latency that occurs as part of API access, and allowing it to
+    impact API consumption plans.
+  image: ''
+  tags: Plans
+- building_block_id: performance
+  type: Plans
+  category: Metrics
+  name: Performance
+  description: Using performance as a consideration when measuring API consumption.
+  image: ''
+  tags: Plans
+- building_block_id: users
+  type: Plans
+  category: Metrics
+  name: Users
+  description: >-
+    Using the number of users as a metric when it comes to planning, and pricing
+    adjustments.
+  image: ''
+  tags: Plans
+- building_block_id: media
+  type: Plans
+  category: Metrics
+  name: Media
+  description: >-
+    Measuring specifically media related considerations as part of API
+    consumption tracking.
+  image: ''
+  tags: Plans
+- building_block_id: scan
+  type: Plans
+  category: Metrics
+  name: Scan
+  description: >-
+    Measure the scanning of a physical or digital object involved in API
+    operations.
+  image: ''
+  tags: Plans
+- building_block_id: support
+  type: Plans
+  category: Metrics
+  name: Support
+  description: >-
+    Directly using support elements as a consideration in API resource planning
+    and consumption.
+  image: ''
+  tags: Plans
+- building_block_id: fees
+  type: Plans
+  category: Metrics
+  name: Fees
+  description: >-
+    Fees that are used as part of API accounts, and consumption, and applied as
+    part of API plans.
+  image: ''
+  tags: Plans
+- building_block_id: percentages
+  type: Plans
+  category: Metrics
+  name: Percentages
+  description: >-
+    The application of various percentages as part of measuring API consumption,
+    and plan operation.
+  image: ''
+  tags: Plans
+- building_block_id: consulting
+  type: Plans
+  category: Metrics
+  name: Consulting
+  description: >-
+    Factoring in hourly consulting as part of API consumption, and plan
+    operations.
+  image: ''
+  tags: Plans
+- building_block_id: priority
+  type: Plans
+  category: Metrics
+  name: Priority
+  description: >-
+    Providing the option of being prioritized in API requests and responses, and
+    measured as part of overall planning.
+  image: ''
+  tags: Plans
+- building_block_id: groups
+  type: Plans
+  category: Metrics
+  name: Groups
+  description: >-
+    API access adjusted based upon grouping, or group level access which is
+    aside from standard plans.
+  image: ''
+  tags: Plans
+- building_block_id: zone
+  type: Plans
+  category: Metrics
+  name: Zone
+  description: >-
+    Another form of grouping API access, into zones, allowing consumers to
+    access and use resources by zone.
+  image: ''
+  tags: Plans
+- building_block_id: memory
+  type: Plans
+  category: Metrics
+  name: Memory
+  description: >-
+    Allowing for the measurement of resource access to be determined by the
+    amount of memory available or consumed.
+  image: ''
+  tags: Plans
+- building_block_id: health
+  type: Plans
+  category: Metrics
+  name: Health
+  description: >-
+    Factoring in health checks in API consumption, and charging specifically on
+    health checks, or changing plans based upon health results.
+  image: ''
+  tags: Plans
+- building_block_id: encryption
+  type: Plans
+  category: Metrics
+  name: Encryption
+  description: >-
+    Considering the existence of, or strength of encryption as part of the API
+    consumption process.
+  image: ''
+  tags: Plans
+- building_block_id: characters
+  type: Plans
+  category: Metrics
+  name: Characters
+  description: >-
+    Counting of textual characters as part of the overall API consumption
+    tracking process.
+  image: ''
+  tags: Plans
+- building_block_id: agent
+  type: Plans
+  category: Metrics
+  name: Agent
+  description: >-
+    Tracking on physical or virtual access to human agents as part of API
+    consumption.
+  image: ''
+  tags: Plans
+- building_block_id: price-per
+  type: Plans
+  category: Metrics
+  name: Price Per
+  description: >-
+    Considering a price per a specific amount of API calls or other metric being
+    applied as part of API consumption.
+  image: ''
+  tags: Plans
+- building_block_id: overview
+  type: Plans
+  category: Geo
+  name: Overview
+  description: >-
+    Providing an overview of what geographic regions are covered or available as
+    part of API consumption.
+  image: ''
+  tags: Plans
+- building_block_id: country
+  type: Plans
+  category: Geo
+  name: Country
+  description: Providing API access or replication within specific countries.
+  image: ''
+  tags: Plans
+- building_block_id: region
+  type: Plans
+  category: Geo
+  name: Region
+  description: Providing API access or replication within specific regions.
+  image: ''
+  tags: Plans
+- building_block_id: onpremise
+  type: Plans
+  category: Geo
+  name: On-Premise
+  description: >-
+    Providing API deployment locally or within existing infrastructure,
+    providing on-premise access levels.
+  image: ''
+  tags: Plans
+- building_block_id: colocation
+  type: Plans
+  category: Geo
+  name: Co-Location
+  description: Allowing for access of API resources via colocated facilities.
+  image: ''
+  tags: Plans
+- building_block_id: charts
+  type: Plans
+  category: Limits
+  name: Charts
+  description: Providing a chart with a listing of all endpoints and limits for each one.
+  image: ''
+  tags: Plans
+- building_block_id: overview
+  type: Plans
+  category: Limits
+  name: Overview
+  description: >-
+    A single page which provides an overview of limits that are in place on API
+    operations.
+  image: ''
+  tags: Plans
+- building_block_id: inline
+  type: Plans
+  category: Limits
+  name: Inline
+  description: >-
+    Providing information about rate limits inline, either within documentation
+    or available within API response details.
+  image: ''
+  tags: Plans
+- building_block_id: range
+  type: Plans
+  category: Limits
+  name: Range
+  description: >-
+    Considering a range of values when measuring API consumption, and evaluating
+    plan level access.
+  image: ''
+  tags: Plans
+- building_block_id: resources
+  type: Plans
+  category: Limits
+  name: Resources
+  description: >-
+    Limits are place upon specific endpoints or verbs, providing granular
+    controls over API resources.
+  image: ''
+  tags: Plans
+- building_block_id: increased
+  type: Plans
+  category: Limits
+  name: Increased
+  description: >-
+    Opportunities for increasing rate limits either by changing plans, or simply
+    requesting limits to be raised.
+  image: ''
+  tags: Plans
+- building_block_id: unlimited
+  type: Plans
+  category: Limits
+  name: Unlimited
+  description: 'The ability to overcome limits, and achieve unlimited access to resources.'
+  image: ''
+  tags: Plans
+- building_block_id: service-level-agreement-sla
+  type: Plans
+  category: Limits
+  name: Service Level Agreement (SLA)
+  description: >-
+    A service level agreement (SLA) is applied as part of API operations as a
+    whole, or as part of particular plans.
+  image: ''
+  tags: Plans
+- building_block_id: api
+  type: Plans
+  category: Limits
+  name: API
+  description: >-
+    There is an API specifically for accessing limitations around API resources
+    for API consumers to use.
+  image: ''
+  tags: Plans
+- building_block_id: endpoints
+  type: Plans
+  category: Resources
+  name: Endpoints
+  description: >-
+    Providing access constraints based specifically on API endpoints allowing
+    granular controls over each available resource.
+  image: ''
+  tags: Plans
+- building_block_id: verbs
+  type: Plans
+  category: Resources
+  name: Verbs
+  description: >-
+    Allowing access controls applied down to the HTTP verb level, providing
+    granular controls for GET, POST, PUT, DELETE, and other dimensions of
+    resources.
+  image: ''
+  tags: Plans
+- building_block_id: addons
+  type: Plans
+  category: Extensions
+  name: Add-Ons
+  description: >-
+    Factoring the availability of add-ons into specific API plans or overall API
+    operations.
+  image: ''
+  tags: Plans
+- building_block_id: connectors
+  type: Plans
+  category: Extensions
+  name: Connectors
+  description: >-
+    Factoring the availability of 3rd party or internal platform connections
+    into specific API plans or overall API operations.
+  image: ''
+  tags: Plans
