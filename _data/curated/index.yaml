@@ -5,40 +5,590 @@
   url: https://tune.com/blog/startups-need-api/
   domain: tune.com
   image: ""
-- curated_id: 5xv918/h5qJmE9/x1AAVCUpb/vq5bOnbpSGRcqDIz5Q=_15c009b5980:ec7789:9eb87abf
-  item_date: "2017-05-13 00:00:00"
-  title: Heres how the unlimited plans from Verizon, ATT, Sprint, and T
-  url: http://feedproxy.google.com/~r/typepad/alleyinsider/silicon_alley_insider/~3/6RS_HKIotrU/unlimited-plans-comparison-verizon-att-sprint-tmobile-2017-5
-  domain: feedproxy.google.com
+- curated_id: 157c613b8d2120f5be89b7e5def9d994
+  item_date: "2015-12-10 00:00:00"
+  title: Introducing Our New Self-service Plan, JumpStart
+  url: https://www.apteligent.com/2015/12/introducing-our-new-self-service-plan-jumpstart/
+  domain: www.apteligent.com
   image: ""
-- curated_id: aTKLPW9AeQAh09DpOW/0/mK2tQUNNgIyAi3xy7MVsb4=_15c4c9d365c:41bd1f6:1980c846
-  item_date: "2017-05-27 18:09:26"
-  title: "New \u2013 Cost Allocation for EBS Snapshots"
-  url: https://aws.amazon.com/blogs/aws/new-cost-allocation-for-ebs-snapshots/
+- curated_id: 1e8aafbb4cfe2e2756dbbe7f661b4cb1
+  item_date: "2015-12-15 00:00:00"
+  title: Google?s BigQuery cloud service adds Custom Quotas to limit daily spending
+  url: http://venturebeat.com/2015/12/15/googles-bigquery-cloud-service-adds-custom-quotas-to-limit-daily-spending/
+  domain: venturebeat.com
+  image: ""
+- curated_id: fddd0ad71c7274e8a76e0ee2a915a8b0
+  item_date: "2015-12-15 19:05:04"
+  title: ""
+  url: http://alpha.apievangelist.com/2015/12/15/playing-with-a-json-representation-for-the-plans-for-many-of-the-leading-apis/
+  domain: alpha.apievangelist.com
+  image: ""
+- curated_id: d01848895f6526f1236bb46f89b73d85
+  item_date: "2016-01-07 00:00:00"
+  title: Pusher Expands Free Plan to 1.4 Million Notifications Per Week
+  url: http://www.programmableweb.com/news/pusher-expands-free-plan-to-1.4-million-notifications-week/brief/2016/01/07
+  domain: www.programmableweb.com
+  image: ""
+- curated_id: e996d821b1425fa480ad7ab1b18d06b8
+  item_date: "2016-01-12 00:00:00"
+  title: Discontinuing Delicious Premium
+  url: http://blog.delicious.com/2016/01/discontinuing-delicious-premium/
+  domain: blog.delicious.com
+  image: ""
+- curated_id: c50aa960da1f6931c5ea7607d13a0d95
+  item_date: "2016-01-12 00:00:00"
+  title: OneNote API throttling and how to avoid it
+  url: http://blogs.msdn.com/b/onenotedev/archive/2016/01/13/onenote-api-throttling-and-best-practices.aspx
+  domain: blogs.msdn.com
+  image: ""
+- curated_id: 504e43ccc4095f3ee60a5d57df569417
+  item_date: "2016-01-13 00:00:00"
+  title: New ? Scheduled Reserved Instances
+  url: https://aws.amazon.com/blogs/aws/new-scheduled-reserved-instances/
   domain: aws.amazon.com
   image: ""
-- curated_id: PSNTZO8gXFUe+cpCZyApw0vEKWPT4b14D6teBEocIAE=_15c874a55e0:b3fd98:e55a4d93
-  item_date: "2017-06-08 03:33:56"
-  title: Amazon has killed off its unlimited data storage deal
-  url: https://www.theverge.com/2017/6/8/15761306/amazon-data-storage-unlimited-cloud-over
+- curated_id: e4161fd6f20ec3c58da22f76a7518865
+  item_date: "2016-01-13 00:00:00"
+  title: AWS now lets customers reserve scheduled, recurring instances
+  url: http://www.zdnet.com/article/aws-now-lets-customers-reserve-scheduled-recurring-instances/#ftag=RSSbaffb68
+  domain: www.zdnet.com
+  image: ""
+- curated_id: 91e5f4df4c5e4b28a61fd9ec31fc021e
+  item_date: "2016-01-17 00:00:00"
+  title: Vinli Gives Developers 60 Billion Free API Calls
+  url: https://dzone.com/articles/vinli-gives-developers-60-billion-free-api-calls
+  domain: dzone.com
+  image: ""
+- curated_id: bef484a1230c0260713b9b4472b2a9b3
+  item_date: "2016-01-25 00:00:00"
+  title: Introducing new plans, new unified capabilities across the Restlet Platform
+  url: http://restlet.com/blog/2016/01/25/introducing-new-plans-new-unified-capabilities-across-the-restlet-platform/
+  domain: restlet.com
+  image: ""
+- curated_id: 2fc68bcd4bfc9c25695a5bd38261db96
+  item_date: "2016-01-29 00:00:00"
+  title: Google Apps treats government workers with unlimited cloud storage
+  url: http://www.zdnet.com/article/google-apps-treats-government-workers-with-unlimited-cloud-storage/#ftag=RSSbaffb68
+  domain: www.zdnet.com
+  image: ""
+- curated_id: d3e26c6482477cc5622841592e2a82c5
+  item_date: "2016-02-02 00:00:00"
+  title: Moz Content Launches New Tiers and Google Analytics Integration
+  url: https://moz.com/blog/moz-content-launches-new-tiers-ga-integration
+  domain: moz.com
+  image: ""
+- curated_id: 15f7497806d1a12487a1793e3ce7bd2a
+  item_date: "2016-02-09 00:00:00"
+  title: You can still claim 100K Postmark credits by supporting DMARC
+  url: https://postmarkapp.com/blog/you-can-still-claim-100k-postmark-credits-by
+  domain: postmarkapp.com
+  image: ""
+- curated_id: 58adb915cee05a0ea1d58f2f4a238136
+  item_date: "2016-02-17 00:00:00"
+  title: Azure Premium Storage Bandwidth Limits
+  url: https://dzone.com/articles/azure-premium-storage-bandwidth-limits
+  domain: dzone.com
+  image: ""
+- curated_id: 8f2c82f84aaa89044b264a9e88c178a0
+  item_date: "2016-02-18 00:00:00"
+  title: How Do You Determine Who Gets Access to Your API?
+  url: http://www.programmableweb.com/news/how-do-you-determine-who-gets-access-to-your-api/analysis/2016/02/18
+  domain: www.programmableweb.com
+  image: ""
+- curated_id: 1a4ebed403201bb22f26a4434c635709
+  item_date: "2016-02-26 00:00:00"
+  title: 100,000 free credits to help us support DMARC
+  url: https://postmarkapp.com/blog/100-000-free-credits-to-help-us-support-dmarc
+  domain: postmarkapp.com
+  image: ""
+- curated_id: c1dc073a35fa933d9388e71715cb1aff
+  item_date: "2016-03-01 00:00:00"
+  title: Algorithmia is now free, forever
+  url: http://blog.algorithmia.com/2016/03/algorithmia-is-now-free-forever/
+  domain: blog.algorithmia.com
+  image: ""
+- curated_id: 2f5f397a2a7fb97fa2ddc720a5a9e62c
+  item_date: "2016-03-01 00:00:00"
+  title: Tiering Data Storage for Cost Savings and Accessibility
+  url: http://www.infostor.com/storage-management/tiering-data-storage-for-cost-savings-and-accessibility.html
+  domain: www.infostor.com
+  image: ""
+- curated_id: aee87ed6322aadf7bdc891769332c079
+  item_date: "2016-03-02 00:00:00"
+  title: Changes to standard and premium pricing plans in Australia
+  url: https://www.xero.com/blog/2016/03/plan-price-changes-in-australia/
+  domain: www.xero.com
+  image: ""
+- curated_id: b7e022a8e2bfae3d29cd5785d9405730
+  item_date: "2016-03-11 00:00:00"
+  title: Rate Limiting Fun
+  url: https://dzone.com/articles/rate-limiting-fun
+  domain: dzone.com
+  image: ""
+- curated_id: e991cac848e150f5c2e5d99512317a74
+  item_date: "2016-03-17 13:54:02"
+  title: Protecting and Rate Limiting an API with Kong
+  url: http://blog.mashape.com/protecting-rate-limiting-api-kong/
+  domain: blog.mashape.com
+  image: ""
+- curated_id: e80e036ea3404b24e180e5ad73e16d45
+  item_date: "2016-03-22 00:00:00"
+  title: Additional Pricing Options for AWS Marketplace Products
+  url: https://aws.amazon.com/blogs/aws/additional-pricing-options-for-aws-marketplace-products/
+  domain: aws.amazon.com
+  image: ""
+- curated_id: 3c8ffc3192e14896a43f7b448936a47d
+  item_date: "2016-03-29 00:00:00"
+  title: SoundCloud launches its $9.99 monthly subscription music service to take
+    on Spotify
+  url: http://venturebeat.com/2016/03/29/soundcloud-launches-its-9-99-monthly-subscription-music-service-to-take-on-spotify/
+  domain: venturebeat.com
+  image: ""
+- curated_id: 7b2124d3a0b0db7a7e95034f65dcc2f6
+  item_date: "2016-04-05 00:00:00"
+  title: Saving Hundreds of Hours With Google Compute Engine Per-Minute Billing
+  url: https://dzone.com/articles/saving-hundreds-of-hours-with-google-compute-engin
+  domain: dzone.com
+  image: ""
+- curated_id: adfe57d66b620d5d81f34b228707ce75
+  item_date: "2016-04-07 00:00:00"
+  title: GitLab Enterprise Edition price change
+  url: https://about.gitlab.com/2016/03/21/gitlab-enterprise-edition-price-change/
+  domain: about.gitlab.com
+  image: ""
+- curated_id: 13180226c714d322b604c67b033be742
+  item_date: "2016-04-26 00:00:00"
+  title: Details on Expiring DigitalOcean Credits
+  url: https://www.digitalocean.com/company/blog/details-on-expiring-digitalocean-credits/
+  domain: www.digitalocean.com
+  image: ""
+- curated_id: 65891de492856aea07e666c929d59e94
+  item_date: "2016-05-03 00:00:00"
+  title: SoundCloud is expanding its paid subscription service internationally
+  url: http://www.businessinsider.com/soundcloud-launches-uk-and-ireland-paid-subscription-service-2016-5
+  domain: www.businessinsider.com
+  image: ""
+- curated_id: 1b189dc52ff74bfbb0438d60a3f272ba
+  item_date: "2016-05-06 00:00:00"
+  title: Uber rankled by app that compares ride-hailing prices
+  url: http://www.boston.com/news/technology/2016/05/06/uber-tries-shut-app-compares-ride-hailing-prices
+  domain: www.boston.com
+  image: ""
+- curated_id: c8f1d88f46c7012358f8dafba63f9d83
+  item_date: "2016-05-10 00:00:00"
+  title: Dropbox?s new education tier has most of its business features for a third
+    of the price
+  url: http://thenextweb.com/apps/2016/05/10/dropbox-introduces-cheaper-business-plan-universities/
+  domain: thenextweb.com
+  image: ""
+- curated_id: e1c4e956b1bd6d58c00050ee62cf0f15
+  item_date: "2016-05-11 00:00:00"
+  title: GitHub Introduces Unlimited Private Repositories
+  url: http://www.programmableweb.com/news/github-introduces-unlimited-private-repositories/brief/2016/05/11
+  domain: www.programmableweb.com
+  image: ""
+- curated_id: 1b96c6eacd265e2c130140264941db87
+  item_date: "2016-05-12 00:00:00"
+  title: Do You Want API Billing Data Via API?
+  url: http://everydeveloper.com/do-you-want-api-billing-data-via-api/
+  domain: everydeveloper.com
+  image: ""
+- curated_id: 4dd07455bf2682f9e60e6f15280099af
+  item_date: "2016-05-17 00:00:00"
+  title: Announcing New Adyen Integration
+  url: https://www.3scale.net/2016/05/announcing-new-adyen-integration/
+  domain: www.3scale.net
+  image: ""
+- curated_id: 8432ee115a46c25d3e7d6b85640dab04
+  item_date: "2016-05-18 00:00:00"
+  title: Announcing Heroku Free SSL Beta and Flexible Dyno Hours
+  url: https://blog.heroku.com/announcing_heroku_free_ssl_beta_and_flexible_dyno_hours
+  domain: blog.heroku.com
+  image: ""
+- curated_id: e88de72422983d9397965d45fcc81c9d
+  item_date: "2016-05-19 00:00:00"
+  title: Discounted yearly pricing and more
+  url: https://whoapi.com/blog/2576/discounted-yearly-pricing-and-more/
+  domain: whoapi.com
+  image: ""
+- curated_id: 91386bdfc0eea03a51e59f6f46fdcd88
+  item_date: "2016-05-25 00:00:00"
+  title: 'A Welcome Trend in American Healthcare: Pricing Transparency'
+  url: https://blog.pokitdok.com/pricing-transparency/
+  domain: blog.pokitdok.com
+  image: ""
+- curated_id: 876622d3ee9ac2f82fd842e9ad47fb97
+  item_date: "2016-06-02 00:00:00"
+  title: Personality Insights price reduction
+  url: https://www.ibm.com/blogs/watson/2016/06/new-pricing-model-personality-insights/
+  domain: www.ibm.com
+  image: ""
+- curated_id: ee373c0d4afb7e1f8c50769ffa5f1ad3
+  item_date: "2016-07-14 00:00:00"
+  title: Announcing New Enterprise Features and Pricing for Built.io Flow
+  url: https://www.built.io/blog/2016/07/announcing-new-enterprise-features-and-pricing-for-built-io-flow/
+  domain: www.built.io
+  image: ""
+- curated_id: 0cbbb7876a8ed101ab673fa895926d42
+  item_date: "2016-07-14 11:00:01"
+  title: 'Tweet: Understand what#039;s covered under the Free Tier: https://t.co/LTLjCEjqPi
+    https://t.co/YYtdnbc2Lv'
+  url: https://twitter.com/awscloud/statuses/753650273084645376
+  domain: twitter.com
+  image: ""
+- curated_id: 078307a63bd912d2fd67d6e0f23ece58
+  item_date: "2016-07-27 00:00:00"
+  title: Is Dynamic Pricing a Hit?
+  url: http://knowledge.wharton.upenn.edu/article/is_dynamic_pricing_a_hit/
+  domain: knowledge.wharton.upenn.edu
+  image: ""
+- curated_id: 86db7e030a0b3f5d6fe73078106fe8e1
+  item_date: "2016-07-29 00:00:00"
+  title: U.S. Judge denies Uber motion to compel arbitration in surge-pricing lawsuit
+  url: http://www.reuters.com/article/us-uber-lawsuit-pricefixing-idUSKCN1092PC
+  domain: www.reuters.com
+  image: ""
+- curated_id: eb09eec15d7a578223c405e36babecab
+  item_date: "2016-08-03 00:00:00"
+  title: 1Password now lets individuals pay monthly to protect their passwords
+  url: http://thenextweb.com/insider/2016/08/03/1password-subscription-individual-plan/
+  domain: thenextweb.com
+  image: ""
+- curated_id: 45527d27afe8a5af4b38dc0c1843325c
+  item_date: "2016-08-05 00:00:00"
+  title: Important Changes to the BaseSpace Sequence Hub Basic Tier Accounts
+  url: https://blog.basespace.illumina.com/2016/08/05/important-changes-to-the-basespace-sequence-hub-basic-tier-accounts/
+  domain: blog.basespace.illumina.com
+  image: ""
+- curated_id: 8e539f6c64943f2bf68deac18fd2d8ae
+  item_date: "2016-08-09 00:00:00"
+  title: 'New feature: Assign rights by service'
+  url: https://www.3scale.net/2016/08/new-feature-assign-rights-by-service/
+  domain: www.3scale.net
+  image: ""
+- curated_id: 9b866719fb11125b7d27f8675728aa7b
+  item_date: "2016-08-11 00:00:00"
+  title: Amazon Elastic Block Store (EBS) Update ? Snapshot Price Reduction  More
+    PIOPS/GiB
+  url: https://aws.amazon.com/blogs/aws/amazon-elastic-block-store-ebs-update-snapshot-price-reduction-more-piopsgib/
+  domain: aws.amazon.com
+  image: ""
+- curated_id: d515e7133064ea40901c900e299e201a
+  item_date: "2016-08-11 00:00:00"
+  title: New ? Usage Plans for Amazon API Gateway
+  url: https://aws.amazon.com/blogs/aws/new-usage-plans-for-amazon-api-gateway/
+  domain: aws.amazon.com
+  image: ""
+- curated_id: f6e07f1d9dee5af2615e935901fb77f6
+  item_date: "2016-08-11 11:06:15"
+  title: AWS launches Usage Plans for API Gateway service
+  url: http://venturebeat.com/2016/08/11/aws-launches-usage-plans-for-api-gateway-service/
+  domain: venturebeat.com
+  image: ""
+- curated_id: b8ddae4f4c8b740d2024e0f50c705301
+  item_date: "2016-08-14 00:00:00"
+  title: Where You Rate-Limit APIs Matters
+  url: https://dzone.com/articles/where-you-rate-limit-apis-matters
+  domain: dzone.com
+  image: ""
+- curated_id: f300336c769c0e6049b8986306b26f6c
+  item_date: "2016-08-18 00:00:00"
+  title: Kloud View ? One click SaaS cost optimization
+  url: https://www.kloudview.com/
+  domain: www.kloudview.com
+  image: ""
+- curated_id: 05f715c7b654cf7d559008025b0c352c
+  item_date: "2016-08-28 00:00:00"
+  title: "Ubisoft Retreats from Free-to-Play Business Model\r\n"
+  url: http://motherboard.vice.com/read/ubisoft-cancels-four-free-to-play-games
+  domain: motherboard.vice.com
+  image: ""
+- curated_id: 0ce35d2ba0ea647b3b92f74a2b25aea2
+  item_date: "2016-08-29 00:00:00"
+  title: New ? Upload AWS Cost  Usage Reports to Redshift and QuickSight
+  url: https://aws.amazon.com/blogs/aws/new-upload-aws-cost-usage-reports-to-redshift-and-quicksight/
+  domain: aws.amazon.com
+  image: ""
+- curated_id: 6400b3f17c6e0965af46316d115907d4
+  item_date: "2016-09-01 23:00:02"
+  title: 'Tweet: Learn how to better understand your bill with AWS Cost Explorer:
+    https://t.co/E1ZXz7nR5P #CloudComputing https://t.co/Bd0pJ7tvdu'
+  url: https://twitter.com/awscloud/statuses/771588473169981441
+  domain: twitter.com
+  image: ""
+- curated_id: ef88714b9e14ebc5cf15c795606e0344
+  item_date: "2016-09-08 00:00:00"
+  title: Twilio (TWLO) Debuts New Enterprise Plan; Will Focus on Security, Administration
+  url: http://www.streetinsider.com/Corporate+News/Twilio+(TWLO)+Debuts+New+Enterprise+Plan;+Will+Focus+on+Security,+Administration/12013538.html
+  domain: www.streetinsider.com
+  image: ""
+- curated_id: 5c0cec2ffc68dca714918a58bc80b678
+  item_date: "2016-09-08 00:00:00"
+  title: Twilio Announces Twilio Enterprise Plan With New Capabilities for Advanced
+    Security, Access Management, and Granular Administration
+  url: http://finance.yahoo.com/news/twilio-announces-twilio-enterprise-plan-120000471.html
+  domain: finance.yahoo.com
+  image: ""
+- curated_id: 3173b2f44f04d2e44eab40ce544b3062
+  item_date: "2016-09-08 05:04:19"
+  title: 'Introducing the Twilio Enterprise Plan: capabilities for enterprise agility
+    amp; managing risk'
+  url: https://www.twilio.com/blog/2016/09/introducing-the-twilio-enterprise-plan.html
+  domain: www.twilio.com
+  image: ""
+- curated_id: 6b092f641c055c714514d8edc487a0a6
+  item_date: "2016-09-08 08:00:55"
+  title: Using Pricing to Inform Your Roadmap
+  url: http://www.mindtheproduct.com/2016/08/using-pricing-to-inform-your-roadmap/
+  domain: www.mindtheproduct.com
+  image: ""
+- curated_id: f0608dc33eb434c40f9372d28abf49c5
+  item_date: "2016-09-08 17:38:01"
+  title: 'Tweet: QuickBooks Online API throttling changes coming soon'
+  url: https://twitter.com/IntuitDev/statuses/774044153076342784
+  domain: twitter.com
+  image: ""
+- curated_id: d492958f8901ba83a503e0f78c2b0a8c
+  item_date: "2016-09-08 20:20:52"
+  title: 'Twilio: Priced for Enterprise Scale - Post - No Jitter'
+  url: http://www.nojitter.com/post/240171941/twilio-priced-for-enterprise-scale
+  domain: www.nojitter.com
+  image: ""
+- curated_id: 40d0ebf71d8e65e746f84f2eac958444
+  item_date: "2016-10-17 00:00:00"
+  title: Verizon has a new pay-to-play data plan (VZ)
+  url: http://www.businessinsider.com/verizon-has-a-new-pay-to-play-data-plan-2016-10
+  domain: www.businessinsider.com
+  image: ""
+- curated_id: 525c8228b039d4472a00bf498a951b65
+  item_date: "2016-10-20 00:00:00"
+  title: 'New plan: Go Diamond! + FREE trials for any Premium service plan'
+  url: http://www.123contactform.com/blog/2016/10/new-plan-go-diamond-free-trials-for-any-premium-service-plan/
+  domain: www.123contactform.com
+  image: ""
+- curated_id: 20e05171ed100092ddc5f3f2698dea63
+  item_date: "2016-10-21 18:24:40"
+  title: How I (sort of) got around the Google Maps API results limit
+  url: https://medium.com/@lenafaure/how-i-sort-of-got-around-the-google-maps-api-results-limit-1c673e66ef36#.eqfm5oo4h
+  domain: medium.com
+  image: ""
+- curated_id: e6fa310fad5bb196f9a0d3124bfa8c25
+  item_date: "2016-11-01 00:00:00"
+  title: Simplified! Weve reworked our pricing
+  url: https://www.contentful.com/blog/2016/11/01/new-pricing/
+  domain: www.contentful.com
+  image: ""
+- curated_id: aa2b7c9882ab9c7d669bb5d95cd2d97e
+  item_date: "2016-11-02 00:00:00"
+  title: Instapaper Premium Read-it-Later Service Now Free
+  url: http://www.pcmag.com/news/349221/instapaper-premium-read-it-later-service-now-free
+  domain: www.pcmag.com
+  image: ""
+- curated_id: 90b15228b207fa880b1274d7b82bbcf4
+  item_date: "2016-11-07 17:14:02"
+  title: Spark for Developers Changes to the Download Limit
+  url: https://developer.ciscospark.com/blog/blog-details-8402.html
+  domain: developer.ciscospark.com
+  image: ""
+- curated_id: 8c52a614c7f90b2e86eb345db049c1a7
+  item_date: "2016-11-11 14:55:42"
+  title: Democratizing the API Economy
+  url: https://medium.com/ringcentral-developers/democratizing-the-api-economy-f63287d73685#.wjtbcxyjc
+  domain: medium.com
+  image: ""
+- curated_id: 92a0ed27f9fe6062b5cfc06fc2e2abfc
+  item_date: "2017-01-04 00:00:00"
+  title: Amazon Web Services Expands the AWS Price List API
+  url: https://www.programmableweb.com/news/amazon-web-services-expands-aws-price-list-api/brief/2017/01/04
+  domain: www.programmableweb.com
+  image: ""
+- curated_id: a55c2eaab2827f048afa361fe2db2784
+  item_date: "2017-01-09 00:00:00"
+  title: Backendless Cloud Pricing Update
+  url: https://backendless.com/backendless-cloud-pricing-update/
+  domain: backendless.com
+  image: ""
+- curated_id: effd1b23f00287cdfa08cb7cb434186f
+  item_date: "2017-01-17 00:00:00"
+  title: "Four pricing mistakes you\u2019re making with your developer product"
+  url: https://techcrunch.com/2017/01/17/four-pricing-mistakes-youre-making-with-your-developer-product/
+  domain: techcrunch.com
+  image: ""
+- curated_id: ad2c54c1190fc89c71deefd37e59db38
+  item_date: "2017-02-17 00:00:00"
+  title: 'Pricing Strategies For SaaS Providers '
+  url: http://blogs.forrester.com/duncan_jones/17-02-17-pricing_strategies_for_saas_providers
+  domain: blogs.forrester.com
+  image: ""
+- curated_id: c20dc44c1f7e4862947579d16fa93058
+  item_date: "2017-02-17 00:00:00"
+  title: 'The Fine Print: Exploring The Big Four Carriers New Unlimited Data Plans  '
+  url: http://www.crn.com/slide-shows/networking/300083794/the-fine-print-exploring-the-big-four-carriers-new-unlimited-data-plans.htm
+  domain: www.crn.com
+  image: ""
+- curated_id: 2358738d63989bbfc3f3029b9c8e0de7
+  item_date: "2017-02-28 00:00:00"
+  title: SoundCloud Adds $5 Monthly Plan
+  url: http://www.pcmag.com/news/352057/soundcloud-adds-5-monthly-plan
+  domain: www.pcmag.com
+  image: ""
+- curated_id: 566ea27d48fd8fa4c152fc444a28658e
+  item_date: "2017-03-08 00:00:00"
+  title: 'Reimagining support for Google Cloud Platform: new pricing model and partnerships'
+  url: https://cloudplatform.googleblog.com/2017/03/reimagining-support-for-Google-Cloud-Platform-new-pricing-model-and-partnerships.html
+  domain: cloudplatform.googleblog.com
+  image: ""
+- curated_id: fb025b466d091ec16f164978adbd9297
+  item_date: "2017-03-10 00:00:00"
+  title: Google Cloud Platform adds free tier
+  url: http://www.zdnet.com/article/google-cloud-platform-adds-free-tier/
+  domain: www.zdnet.com
+  image: ""
+- curated_id: 6802c5aa52f94fdd5d77805ded222b67
+  item_date: "2017-03-10 00:00:00"
+  title: Google offers new Always Free cloud tier to attract users
+  url: http://www.pcworld.com/article/3179633/cloud-computing/google-offers-new-always-free-cloud-tier-to-attract-users.html#tk.rss_all
+  domain: www.pcworld.com
+  image: ""
+- curated_id: b84b031e2b1f28854bd459cb92a35b4a
+  item_date: "2017-03-14 00:00:00"
+  title: AWS follows Google with Reserved Instance flexibility changes
+  url: http://www.pcworld.com/article/3180821/cloud-computing/aws-follows-google-with-reserved-instance-flexibility-changes.html#tk.rss_all
+  domain: www.pcworld.com
+  image: ""
+- curated_id: 6d30668fbe82aa30c4f11e53c1526250
+  item_date: "2017-03-15 00:00:00"
+  title: AWS offers Alexa developers free cloud credits
+  url: http://www.pcworld.com/article/3181368/cloud-computing/aws-offers-alexa-developers-free-cloud-credits.html#tk.rss_all
+  domain: www.pcworld.com
+  image: ""
+- curated_id: 9fb094f7e0a5d02ec9b3986d8d9aad6f
+  item_date: "2017-03-22 00:00:00"
+  title: Medium launches memberships for $5 per month
+  url: http://www.theverge.com/2017/3/22/15028310/medium-membership-subscriptions-launch
   domain: www.theverge.com
   image: ""
-- curated_id: 4i+1vhCwmRRLfmB7ypTnMh+ZKSvsz6Rgf0lfR0WWb0w=_15c8827d6a3:cd4a2b:e55a4d93
-  item_date: "2017-06-08 07:39:00"
-  title: Amazon drops its unlimited cloud storage plan
-  url: https://www.engadget.com/2017/06/08/amazon-drops-its-unlimited-cloud-storage-plan/
-  domain: www.engadget.com
+- curated_id: 865cd00117c3b1f1757a55c495af0821
+  item_date: "2017-03-22 00:00:00"
+  title: "\u201CMedia is broken,\u201D so Medium\u2019s launching a $5/month member
+    program that offers small upgrades"
+  url: http://www.niemanlab.org/2017/03/media-is-broken-so-mediums-launching-a-5month-member-program-that-offers-small-upgrades/
+  domain: www.niemanlab.org
   image: ""
-- curated_id: OLXHyS/XmDKr82PRyGC7hBl1SeB3URhLZ3EZF3vZmbs=_15ca367cb64:267489d:47752f80
-  item_date: "2017-06-13 14:41:15"
-  title: Hands
-  url: http://developer.salesforce.com/blogs/developer-relations/?p=183021
-  domain: developer.salesforce.com
+- curated_id: d7ffdd496018ee8a292bde4cecddfdf3
+  item_date: "2017-03-23 00:00:00"
+  title: Introducing Postman Pro
+  url: http://blog.getpostman.com/2015/12/10/introducing-postman-cloud/
+  domain: blog.getpostman.com
   image: ""
-- curated_id: FZ/2GLZp/a8FriFm6BqxYgMelBuYPP5oD17BctyF8kM=_15cb478a690:143df6:c8935e7d
-  item_date: "2017-06-16 19:37:21"
-  title: Mozscape API Pricing
-  url: https://medium.com/p/86a2d5eebd01
+- curated_id: 4c3b255183649c450064c0fcfc10c9f3
+  item_date: "2017-03-23 00:00:00"
+  title: Twitter is considering charging you for premium features
+  url: https://thenextweb.com/twitter/2017/03/24/twitter-is-considering-charging-you-for-premium-features/
+  domain: thenextweb.com
+  image: ""
+- curated_id: 8bf3c67e0420826dd7713bf013c28f78
+  item_date: "2017-04-04 00:00:00"
+  title: Spotify trades free-tier album delays for smaller royalties
+  url: https://techcrunch.com/2017/04/04/spotify-for-windowing/
+  domain: techcrunch.com
+  image: ""
+- curated_id: b08606488c37826786850a052f439972
+  item_date: "2017-04-04 00:00:00"
+  title: Spotify now offers Premium users exclusive early access to new music
+  url: https://thenextweb.com/music/2017/04/04/spotify-now-offers-premium-users-exclusive-early-access-new-music/
+  domain: thenextweb.com
+  image: ""
+- curated_id: a00c793e8810c04d01781edeb54c1c5a
+  item_date: "2017-04-05 00:00:00"
+  title: Expanding how you pay for Slack
+  url: https://medium.com/m/global-identity
   domain: medium.com
+  image: ""
+- curated_id: 8fec8423f09b1c8e8433a117ee35df13
+  item_date: "2017-04-05 00:00:00"
+  title: Sling TV now offers Showtime for additional $10 per month
+  url: http://www.theverge.com/2017/4/5/15190834/sling-tv-showtime-now-available
+  domain: www.theverge.com
+  image: ""
+- curated_id: 3f9ba5e6856a2058da9d85bb99df41b6
+  item_date: "2017-04-07 00:00:00"
+  title: 'Two-thirds of EU travel websites mislead on prices: Commission'
+  url: http://www.reuters.com/article/us-eu-travel-websites-idUSKBN1791HO
+  domain: www.reuters.com
+  image: ""
+- curated_id: cb9df920e8d56472c8c3481e1a8577fb
+  item_date: "2017-04-11 00:00:00"
+  title: Introducing paid subscriptions on GitLab.com
+  url: https://about.gitlab.com/2017/04/11/introducing-subscriptions-on-gitlab-dot-com/
+  domain: about.gitlab.com
+  image: ""
+- curated_id: 1e731cf8926eb1d76a99c60dee110ae7
+  item_date: "2017-04-12 00:00:00"
+  title: 'Latest Update: New Pricing Plan !'
+  url: https://www.invoicera.com/blog/latest-update-new-pricing-plans/
+  domain: www.invoicera.com
+  image: ""
+- curated_id: 9e82165af462072949246e10fdca5f0a
+  item_date: "2017-04-20 00:00:00"
+  title: "AWS Price List API Update \u2013 Regional Price Lists"
+  url: https://aws.amazon.com/blogs/aws/aws-price-list-api-update-regional-price-lists/
+  domain: aws.amazon.com
+  image: ""
+- curated_id: 6a8eb0d40e3d9f916bb5bf029d763a08
+  item_date: "2017-04-25 00:00:00"
+  title: New Box platform pricing designed to give developers more cost certainty
+  url: https://blog.box.com/blog/introducing-flexible-new-pricing-model-box-platform/
+  domain: blog.box.com
+  image: ""
+- curated_id: 3d1509db37a9d18994c9a1071fbadbde
+  item_date: "2017-04-25 09:03:57"
+  title: 'Tweet: Check out the new pricing model for Box Platform - it#039;s scalable,
+    customizable, and predictable!hellip; https://t.co/o77lK1pSTj'
+  url: https://twitter.com/BoxPlatform/statuses/856901606020984832
+  domain: twitter.com
+  image: ""
+- curated_id: 3cd94ed85b66374b850d46b5b027e30e
+  item_date: "2017-04-26 00:00:00"
+  title: Verizon Announces Unlimited Prepaid Plan
+  url: http://www.pcmag.com/news/353313/verizon-announces-unlimited-prepaid-plan
+  domain: www.pcmag.com
+  image: ""
+- curated_id: 5909afd65ca3653ab5de6b5d3df61717
+  item_date: "2017-05-02 00:00:00"
+  title: "Appcelerator Indie Plans Are Now Free! And Wait, There\u2019s More\u2026"
+  url: https://www.appcelerator.com/blog/2017/05/free-plan-announcement/
+  domain: www.appcelerator.com
+  image: ""
+- curated_id: d697444eecfaabc31fa4237f4ba42b2c
+  item_date: "2017-05-03 00:00:00"
+  title: Amazon announces EC2 price reductions
+  url: http://www.zdnet.com/article/amazon-announces-latest-ec2-price-reductions/
+  domain: www.zdnet.com
+  image: ""
+- curated_id: baf51d786ef2e983cddbec5664925215
+  item_date: "2017-05-03 00:00:00"
+  title: 'Amazon Cuts Cloud Prices: New AWS Price Reductions Target Reserved Instances'
+  url: http://www.crn.com/news/cloud/300084794/amazon-cuts-cloud-prices-new-aws-price-reductions-target-reserved-instances.htm
+  domain: www.crn.com
+  image: ""
+- curated_id: 19832a74d17dce4feda0f86d825394d2
+  item_date: "2017-05-03 00:00:00"
+  title: "EC2 Price Reductions \u2013 Reserved Instances  M4 Instances"
+  url: https://aws.amazon.com/blogs/aws/ec2-price-reductions-reserved-instances-m4-instances/
+  domain: aws.amazon.com
+  image: ""
+- curated_id: 9e380433e46d0ba968c61d182b94ba42
+  item_date: "2017-05-04 00:00:00"
+  title: Zapier launches $250/month team accounts
+  url: https://techcrunch.com/2017/05/04/zapier-launches-250month-team-accounts/
+  domain: techcrunch.com
+  image: ""
+- curated_id: d15d008cd83dfa8a41e17853964a8d32
+  item_date: "2017-05-13 00:00:00"
+  title: Heres how the unlimited plans from Verizon, ATT, Sprint, and T-Mobile compare
+    (VZ, TMUS, S, T)
+  url: http://feedproxy.google.com/~r/typepad/alleyinsider/silicon_alley_insider/~3/6RS_HKIotrU/unlimited-plans-comparison-verizon-att-sprint-tmobile-2017-5
+  domain: feedproxy.google.com
   image: ""
 ...
