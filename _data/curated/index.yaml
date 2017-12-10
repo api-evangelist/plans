@@ -560,12 +560,6 @@
   url: https://www.appcelerator.com/blog/2017/05/free-plan-announcement/
   domain: www.appcelerator.com
   image: ""
-- curated_id: d697444eecfaabc31fa4237f4ba42b2c
-  item_date: "2017-05-03 00:00:00"
-  title: Amazon announces EC2 price reductions
-  url: http://www.zdnet.com/article/amazon-announces-latest-ec2-price-reductions/
-  domain: www.zdnet.com
-  image: ""
 - curated_id: baf51d786ef2e983cddbec5664925215
   item_date: "2017-05-03 00:00:00"
   title: 'Amazon Cuts Cloud Prices: New AWS Price Reductions Target Reserved Instances'
@@ -577,6 +571,12 @@
   title: "EC2 Price Reductions \u2013 Reserved Instances  M4 Instances"
   url: https://aws.amazon.com/blogs/aws/ec2-price-reductions-reserved-instances-m4-instances/
   domain: aws.amazon.com
+  image: ""
+- curated_id: d697444eecfaabc31fa4237f4ba42b2c
+  item_date: "2017-05-03 00:00:00"
+  title: Amazon announces EC2 price reductions
+  url: http://www.zdnet.com/article/amazon-announces-latest-ec2-price-reductions/
+  domain: www.zdnet.com
   image: ""
 - curated_id: 9e380433e46d0ba968c61d182b94ba42
   item_date: "2017-05-04 00:00:00"
