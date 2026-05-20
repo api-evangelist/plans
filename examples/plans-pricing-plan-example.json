@@ -1,0 +1,53 @@
+{
+  "id": "stripe-payments-standard",
+  "name": "Payments — Standard",
+  "type": "usage-based",
+  "description": "Standard pricing for online card payments. Per-transaction rate with surcharges for international cards and currency conversion.",
+  "provider": "Stripe",
+  "provider_id": "stripe",
+  "currency": "USD",
+  "billing_period": "usage",
+  "base_price": "$0",
+  "entries": [
+    {
+      "name": "tx_domestic",
+      "label": "Domestic card transaction",
+      "type": "metered",
+      "metric": "transaction",
+      "limit": -1,
+      "timeFrame": "usage",
+      "geo": "US",
+      "unit": 1,
+      "price": "2.9% + $0.30",
+      "userMultiplied": false
+    },
+    {
+      "name": "tx_international",
+      "label": "International card surcharge",
+      "type": "metered",
+      "metric": "transaction",
+      "limit": -1,
+      "timeFrame": "usage",
+      "geo": "non-US",
+      "unit": 1,
+      "price": "+1.5%",
+      "userMultiplied": false
+    },
+    {
+      "name": "tx_fx",
+      "label": "Currency conversion",
+      "type": "metered",
+      "metric": "transaction",
+      "limit": -1,
+      "timeFrame": "usage",
+      "unit": 1,
+      "price": "+1%",
+      "userMultiplied": false
+    }
+  ],
+  "sources": [
+    "https://stripe.com/pricing"
+  ],
+  "reconciled": true,
+  "tags": ["Payments", "Usage-Based", "Billing"]
+}

@@ -1,0 +1,15 @@
+{
+  "name": "api_requests",
+  "label": "API Requests",
+  "description": "Monthly API request quota across all included endpoints. Overages are rejected with a 429 response unless an add-on is attached.",
+  "type": "quota",
+  "metric": "requests",
+  "limit": 100000,
+  "timeFrame": "month",
+  "geo": "global",
+  "domains": ["payments", "billing"],
+  "unit": 1,
+  "price": "$0",
+  "userMultiplied": false,
+  "feature_flag": "core_api_access"
+}

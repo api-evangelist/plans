@@ -1,0 +1,110 @@
+{
+  "$schema": "https://json-structure.org/meta/core/v0/#",
+  "$id": "https://raw.githubusercontent.com/api-evangelist/plans/refs/heads/main/json-structure/plans-pricing-plan-structure.json",
+  "name": "PricingPlan",
+  "description": "A single pricing plan or subscription tier offered by an API or SaaS provider, as represented in an API Commons Plans artifact.",
+  "type": "object",
+  "properties": {
+    "id": {
+      "type": "string",
+      "description": "Stable slug identifying this plan within the provider's catalog.",
+      "example": "stripe-payments-standard"
+    },
+    "name": {
+      "type": "string",
+      "description": "Display name of the plan or tier.",
+      "example": "Payments — Standard"
+    },
+    "type": {
+      "type": "string",
+      "description": "Plan model: how access and billing are structured.",
+      "enum": [
+        "free",
+        "freemium",
+        "tiered",
+        "usage-based",
+        "flat",
+        "custom",
+        "enterprise"
+      ],
+      "example": "usage-based"
+    },
+    "description": {
+      "type": "string",
+      "description": "Human-readable description of the plan, its audience, and what it includes.",
+      "example": "Standard pricing for online card payments."
+    },
+    "provider": {
+      "type": "string",
+      "description": "Name of the provider publishing this plan.",
+      "example": "Stripe"
+    },
+    "provider_id": {
+      "type": "string",
+      "description": "Slug of the provider in the API Evangelist network.",
+      "example": "stripe"
+    },
+    "currency": {
+      "type": "string",
+      "description": "ISO 4217 currency code for prices in this plan.",
+      "example": "USD"
+    },
+    "billing_period": {
+      "type": "string",
+      "description": "Recurring billing cadence for the plan.",
+      "enum": [
+        "one-time",
+        "monthly",
+        "quarterly",
+        "annual",
+        "usage",
+        "custom"
+      ],
+      "example": "monthly"
+    },
+    "base_price": {
+      "type": "string",
+      "description": "Base recurring price for the plan, expressed as a string to accommodate ranges, formulas, and 'Contact Us' values.",
+      "example": "$0"
+    },
+    "entries": {
+      "type": "array",
+      "description": "Metered or included entries that make up the plan (quotas, transactions, seats, features).",
+      "items": {
+        "type": "object"
+      }
+    },
+    "sources": {
+      "type": "array",
+      "description": "URLs from which this plan was sourced — typically a pricing page or provider documentation.",
+      "items": {
+        "type": "uri"
+      },
+      "example": [
+        "https://stripe.com/pricing"
+      ]
+    },
+    "reconciled": {
+      "type": "boolean",
+      "description": "Whether this plan has been reconciled against provider-published documentation rather than scaffolded.",
+      "example": true
+    },
+    "tags": {
+      "type": "array",
+      "description": "Tags categorizing the plan.",
+      "items": {
+        "type": "string"
+      },
+      "example": [
+        "Payments",
+        "Usage-Based"
+      ]
+    }
+  },
+  "required": [
+    "id",
+    "name",
+    "type",
+    "provider"
+  ]
+}

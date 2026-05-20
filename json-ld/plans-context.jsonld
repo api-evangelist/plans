@@ -1,0 +1,93 @@
+{
+  "@context": {
+    "@version": 1.1,
+    "plans": "https://api-evangelist.github.io/plans/schema/",
+    "schema": "https://schema.org/",
+    "dcterms": "http://purl.org/dc/terms/",
+    "xsd": "http://www.w3.org/2001/XMLSchema#",
+    "dcat": "https://www.w3.org/ns/dcat#",
+    "gr": "http://purl.org/goodrelations/v1#",
+
+    "PricingPlan": "schema:Offer",
+    "PlanEntry": "plans:PlanEntry",
+
+    "id": "@id",
+    "name": "schema:name",
+    "label": "schema:name",
+    "description": "schema:description",
+    "provider": "schema:provider",
+    "provider_id": {
+      "@id": "plans:provider_id",
+      "@type": "xsd:string"
+    },
+    "type": {
+      "@id": "plans:type",
+      "@type": "xsd:string"
+    },
+    "currency": {
+      "@id": "schema:priceCurrency",
+      "@type": "xsd:string"
+    },
+    "billing_period": {
+      "@id": "plans:billing_period",
+      "@type": "xsd:string"
+    },
+    "base_price": {
+      "@id": "schema:price",
+      "@type": "xsd:string"
+    },
+    "price": {
+      "@id": "schema:price",
+      "@type": "xsd:string"
+    },
+    "entries": {
+      "@id": "plans:entries",
+      "@container": "@set"
+    },
+    "metric": {
+      "@id": "plans:metric",
+      "@type": "xsd:string"
+    },
+    "limit": {
+      "@id": "plans:limit"
+    },
+    "timeFrame": {
+      "@id": "plans:timeFrame",
+      "@type": "xsd:string"
+    },
+    "geo": {
+      "@id": "schema:areaServed",
+      "@type": "xsd:string"
+    },
+    "domains": {
+      "@id": "plans:domains",
+      "@container": "@set",
+      "@type": "xsd:string"
+    },
+    "unit": {
+      "@id": "gr:hasUnitOfMeasurement"
+    },
+    "userMultiplied": {
+      "@id": "plans:userMultiplied",
+      "@type": "xsd:boolean"
+    },
+    "feature_flag": {
+      "@id": "plans:feature_flag",
+      "@type": "xsd:string"
+    },
+    "sources": {
+      "@id": "dcterms:source",
+      "@container": "@set",
+      "@type": "@id"
+    },
+    "reconciled": {
+      "@id": "plans:reconciled",
+      "@type": "xsd:boolean"
+    },
+    "tags": {
+      "@id": "dcat:keyword",
+      "@container": "@set",
+      "@type": "xsd:string"
+    }
+  }
+}

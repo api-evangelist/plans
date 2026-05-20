@@ -1,0 +1,286 @@
+vocabulary: "1.0.0"
+
+info:
+  provider: Plans
+  description: Vocabulary for the Plans topic, covering machine-readable API and SaaS plan definitions, pricing tiers, entitlements, rate plans, and pricing-page artifacts.
+  created: '2026-05-19'
+  modified: '2026-05-19'
+
+operational:
+  apis:
+    - name: Stripe Products and Prices
+      namespace: stripe
+      status: active
+    - name: Lago Plans API
+      namespace: lago
+      status: active
+    - name: Metronome Plans API
+      namespace: metronome
+      status: active
+    - name: Orb Plans API
+      namespace: orb
+      status: active
+    - name: Chargebee Plans
+      namespace: chargebee
+      status: active
+    - name: Recurly Plans
+      namespace: recurly
+      status: active
+    - name: Apigee Rate Plans
+      namespace: google-apigee
+      status: active
+    - name: Schematic Plans and Entitlements
+      namespace: schematic
+      status: active
+    - name: Stigg Plans and Features
+      namespace: stigg
+      status: active
+
+  resources:
+    - name: plans
+      description: Pricing plans or subscription tiers exposed by a provider
+      actions:
+        - list
+        - get
+        - create
+        - update
+        - archive
+    - name: plan-entries
+      description: Quotas, metered charges, included features, and add-ons that compose a plan
+      actions:
+        - list
+        - get
+        - create
+        - update
+        - delete
+    - name: prices
+      description: Price points and rate cards associated with a plan
+      actions:
+        - list
+        - get
+        - create
+    - name: entitlements
+      description: Feature gates and quotas applied to customers based on their plan
+      actions:
+        - list
+        - get
+        - check
+    - name: subscriptions
+      description: Customer attachments to a plan
+      actions:
+        - create
+        - get
+        - list
+        - update
+        - cancel
+
+  actions:
+    - name: list
+      description: Enumerate resources
+      httpMethod: GET
+      pattern: read
+    - name: get
+      description: Retrieve a single resource
+      httpMethod: GET
+      pattern: read
+    - name: create
+      description: Create a new plan, entry, price, or subscription
+      httpMethod: POST
+      pattern: write
+    - name: update
+      description: Update an existing resource
+      httpMethod: PUT
+      pattern: write
+    - name: archive
+      description: Soft-delete or archive a plan to remove it from new sign-ups
+      httpMethod: POST
+      pattern: write
+    - name: delete
+      description: Remove a resource
+      httpMethod: DELETE
+      pattern: destructive
+    - name: cancel
+      description: Cancel a customer subscription
+      httpMethod: POST
+      pattern: write
+    - name: check
+      description: Check whether a customer is entitled to a feature or has remaining quota
+      httpMethod: GET
+      pattern: query
+
+  schemas:
+    core:
+      - name: PricingPlan
+        description: A single pricing plan or subscription tier in an API Commons Plans artifact
+        properties:
+          - id
+          - name
+          - type
+          - description
+          - provider
+          - currency
+          - billing_period
+          - base_price
+          - entries
+          - sources
+          - reconciled
+          - tags
+      - name: PlanEntry
+        description: A quota, metered charge, included feature, or add-on within a plan
+        properties:
+          - name
+          - label
+          - description
+          - type
+          - metric
+          - limit
+          - timeFrame
+          - geo
+          - domains
+          - unit
+          - price
+          - userMultiplied
+          - feature_flag
+
+  enums:
+    plan_types:
+      - free
+      - freemium
+      - tiered
+      - usage-based
+      - flat
+      - custom
+      - enterprise
+    entry_types:
+      - quota
+      - metered
+      - tiered
+      - included
+      - feature
+      - addon
+      - overage
+      - commitment
+    billing_periods:
+      - one-time
+      - monthly
+      - quarterly
+      - annual
+      - usage
+      - custom
+    time_frames:
+      - minute
+      - hour
+      - day
+      - month
+      - quarter
+      - year
+      - usage
+      - lifetime
+
+capability:
+  workflows:
+    - name: Pricing Page to Catalog Sync
+      description: Scrape a public pricing page into an API Commons Plans YAML, reconcile against provider documentation, and load into a billing catalog
+      apis:
+        - stripe
+        - lago
+        - chargebee
+      personas:
+        - Revenue Operations Analyst
+      domains:
+        - Pricing Reconciliation
+    - name: Entitlement Enforcement
+      description: Read plan and entry definitions in product code to gate features and enforce quotas
+      apis:
+        - schematic
+        - stigg
+      personas:
+        - Product Engineer
+      domains:
+        - Entitlements
+    - name: Usage-Based Billing Configuration
+      description: Configure a usage-based billing engine from a plan artifact declaring metrics, tier breaks, and commitments
+      apis:
+        - metronome
+        - orb
+        - amberflo
+        - togai
+        - m3ter
+        - lago
+      personas:
+        - Billing Engineer
+      domains:
+        - Usage-Based Billing
+    - name: API Marketplace Plan Tagging
+      description: Tag listed APIs in a hub or gateway with the subscription tiers under which they are accessible
+      apis:
+        - postman
+        - google-apigee
+        - zuplo
+      personas:
+        - API Product Manager
+      domains:
+        - API Marketplace
+
+  personas:
+    - id: revenue-operations-analyst
+      name: Revenue Operations Analyst
+      description: Operators who reconcile published pricing against billed prices and govern pricing change history
+      workflows:
+        - Pricing Page to Catalog Sync
+    - id: product-engineer
+      name: Product Engineer
+      description: Engineers who consume plan artifacts to drive feature gating and in-product upgrade prompts
+      workflows:
+        - Entitlement Enforcement
+    - id: billing-engineer
+      name: Billing Engineer
+      description: Engineers who configure usage-based billing engines and rate cards
+      workflows:
+        - Usage-Based Billing Configuration
+    - id: api-product-manager
+      name: API Product Manager
+      description: Product managers responsible for API packaging, plan tagging, and marketplace presentation
+      workflows:
+        - API Marketplace Plan Tagging
+
+  domains:
+    - name: Pricing Reconciliation
+      description: Keeping public pricing pages and billed prices in lockstep through machine-readable plan artifacts
+    - name: Entitlements
+      description: Feature gating and quota enforcement driven by plan definitions
+    - name: Usage-Based Billing
+      description: Metered, tiered, and commitment-based pricing engines
+    - name: API Marketplace
+      description: API hubs and gateways that surface plan-tagged API listings
+
+crossReference:
+  - resource: plans
+    operations:
+      - list
+      - get
+      - create
+      - update
+    workflows:
+      - Pricing Page to Catalog Sync
+      - Usage-Based Billing Configuration
+    personas:
+      - Revenue Operations Analyst
+      - Billing Engineer
+  - resource: entitlements
+    operations:
+      - list
+      - check
+    workflows:
+      - Entitlement Enforcement
+    personas:
+      - Product Engineer
+  - resource: prices
+    operations:
+      - list
+      - get
+      - create
+    workflows:
+      - Usage-Based Billing Configuration
+    personas:
+      - Billing Engineer

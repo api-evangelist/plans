@@ -1,0 +1,78 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://raw.githubusercontent.com/api-evangelist/plans/refs/heads/main/json-schema/plans-plan-entry-schema.json",
+  "title": "PlanEntry",
+  "description": "A single line item within a pricing plan: a quota, metered charge, included feature, or add-on. Entries are the units that compose a plan in the API Commons Plans model.",
+  "type": "object",
+  "properties": {
+    "name": {
+      "type": "string",
+      "description": "Machine-friendly name for the entry.",
+      "example": "api_requests"
+    },
+    "label": {
+      "type": "string",
+      "description": "Human-readable label for the entry as it appears in pricing copy.",
+      "example": "API Requests"
+    },
+    "description": {
+      "type": "string",
+      "description": "Description of what the entry meters or includes.",
+      "example": "Monthly API request quota across all included endpoints."
+    },
+    "type": {
+      "type": "string",
+      "description": "How the entry is billed or counted.",
+      "enum": ["quota", "metered", "tiered", "included", "feature", "addon", "overage", "commitment"],
+      "example": "quota"
+    },
+    "metric": {
+      "type": "string",
+      "description": "Unit of measurement for this entry.",
+      "example": "requests"
+    },
+    "limit": {
+      "type": ["integer", "number", "string"],
+      "description": "Numeric cap on this entry within the time frame. Use -1 for unlimited; strings allowed for ranges or 'unlimited'.",
+      "example": 1000
+    },
+    "timeFrame": {
+      "type": "string",
+      "description": "Time window over which the limit or metric resets.",
+      "enum": ["minute", "hour", "day", "month", "quarter", "year", "usage", "lifetime"],
+      "example": "month"
+    },
+    "geo": {
+      "type": "string",
+      "description": "Geographic scope of the entry, if pricing varies by region.",
+      "example": "global"
+    },
+    "domains": {
+      "type": "array",
+      "description": "API domains or surfaces this entry applies to.",
+      "items": { "type": "string" },
+      "example": ["payments", "billing"]
+    },
+    "unit": {
+      "type": ["integer", "number", "string"],
+      "description": "Unit size for billing — e.g. priced per 1, per 1000, per GB.",
+      "example": 1
+    },
+    "price": {
+      "type": "string",
+      "description": "Price expressed as a string to accommodate percentages, formulas, ranges, and 'Contact Us' values.",
+      "example": "2.9% + $0.30"
+    },
+    "userMultiplied": {
+      "type": "boolean",
+      "description": "Whether the limit or price scales per seat or per user.",
+      "example": false
+    },
+    "feature_flag": {
+      "type": "string",
+      "description": "Identifier used by entitlement platforms (Schematic, Stigg) to gate this entry in product code.",
+      "example": "advanced_analytics"
+    }
+  },
+  "required": ["name", "type"]
+}
