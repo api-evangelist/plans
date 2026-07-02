@@ -3,8 +3,6 @@ An index and topic collection covering machine-readable API and SaaS plan defini
 
 **URL:** [https://apievangelist.com](https://apievangelist.com)
 
-**Run:** [Capabilities Using Naftiko](https://github.com/naftiko/fleet?utm_source=api-evangelist&utm_medium=readme&utm_campaign=company-api-evangelist&utm_content=repo)
-
 ## Tags:
 
  - Pricing Plans, API Commons Plans, Subscription Tiers, Pricing Page, Plan Catalog, Rate Plans, Plan Entitlements
