@@ -1,0 +1,16 @@
+related:
+- name: Monetization
+  url: https://monetization.apievangelist.com
+  icon: https://monetization.apievangelist.com/icon.png
+  description: 'An index and topic collection covering API and SaaS monetization platforms: billing engines,
+    subscription management, usage metering, usage-based pricing, revenue recognition, and…'
+- name: Portal
+  url: https://portal.apievangelist.com
+  icon: https://portal.apievangelist.com/icon.png
+  description: A curated index of services, tooling, and open source solutions for API developer portals,
+    API catalogs, API marketplaces, and developer experience platforms. This collection…
+- name: Transparency
+  url: https://transparency.apievangelist.com
+  icon: https://transparency.apievangelist.com/icon.png
+  description: An index and topic collection covering public-facing transparency surfaces across the API
+    and platform ecosystem. Transparency in this context refers to the mechanisms platforms…
