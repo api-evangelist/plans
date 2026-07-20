@@ -1,7 +1,7 @@
 ---
-title: API catalog is the AI substrate of the future
-link: http://redocly.com/blog/api-catalog-ai-substrate
-published: '2025-12-18'
+title: Why API catalogs are critical for agentic software development
+link: http://redocly.com/blog/api-catalogs-agentic-software
+published: '2026-04-23'
 provider: redoc
 repo: https://github.com/api-evangelist/redoc
 domain: redocly.com
