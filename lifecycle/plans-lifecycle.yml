@@ -1,0 +1,19 @@
+generated: '2026-07-20'
+method: searched
+source: plans.app site + Hyperping status page (no OpenAPI available to derive from)
+provider: Plans
+notes: >-
+  Plans exposes no public developer API, so there is no versioning, deprecation,
+  or Sunset/Deprecation (RFC 8594) header policy to capture. The only operational
+  lifecycle signal published is a hosted status page.
+status_page:
+  url: https://plans.hyperping.app
+  provider: Hyperping
+  status: 200
+versioning:
+  policy: none-published
+deprecation:
+  policy: none-published
+  sunset_header: not-applicable
+sla:
+  published: false

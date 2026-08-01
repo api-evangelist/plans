@@ -1,0 +1,45 @@
+generated: '2026-07-20'
+method: probed
+source: live HTTP probes of plans.app + platform.plans.app well-known paths
+note: >-
+  No real .well-known documents were found. plans.app returns 404 for every
+  well-known path. platform.plans.app is a single-page application that returns
+  its HTML shell (HTTP 200) for every path, including well-known and /api — these
+  are catch-all responses, not genuine security.txt / OIDC / OAuth metadata, so
+  they are recorded as not-found.
+probes:
+- host: plans.app
+  path: /.well-known/security.txt
+  status: 404
+  found: false
+- host: plans.app
+  path: /.well-known/openid-configuration
+  status: 404
+  found: false
+- host: plans.app
+  path: /.well-known/oauth-authorization-server
+  status: 404
+  found: false
+- host: plans.app
+  path: /.well-known/api-catalog
+  status: 404
+  found: false
+- host: plans.app
+  path: /.well-known/ai-plugin.json
+  status: 404
+  found: false
+- host: platform.plans.app
+  path: /.well-known/security.txt
+  status: 200
+  found: false
+  note: SPA HTML shell, not a security.txt document
+- host: platform.plans.app
+  path: /.well-known/openid-configuration
+  status: 200
+  found: false
+  note: SPA HTML shell, not OIDC metadata
+- host: platform.plans.app
+  path: /.well-known/oauth-authorization-server
+  status: 200
+  found: false
+  note: SPA HTML shell, not OAuth metadata

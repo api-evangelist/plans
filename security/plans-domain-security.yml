@@ -1,0 +1,16 @@
+generated: '2026-07-20'
+method: probed
+source: live DNS/TLS/HTTP probes of apis.yml + OpenAPI hosts
+hosts:
+- host: plans.app
+  https: true
+  tls_version: TLSv1.3
+  cert_expires: Oct 16 20:40:34 2026 GMT
+  hsts: false
+domains:
+- domain: plans.app
+  dnssec: false
+  caa: []
+  spf: true
+  dmarc: true
+  dmarc_policy: quarantine

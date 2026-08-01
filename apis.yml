@@ -1,8 +1,28 @@
 aid: plans
 name: Plans
-description: 'Plans is a company surfaced as a portfolio company of partech and added to the API Evangelist
-  network as a stub for enrichment. Sector: Climate. This profile is a lead awaiting the enrichment pipeline.'
+description: >-
+  Plans (plans.app, formerly lun.energy) is a climate-technology company focused on
+  decarbonising the built world. It removes the friction that stands in the way of
+  transitioning homes to low-carbon energy faster, letting professionals capture
+  building data on a mobile device, analyze it, and produce retrofit / energy plans —
+  "capture, analyze, plan, all in your pocket." A web platform (platform.plans.app) and
+  a Chrome extension support the workflow, and the product is offered across English,
+  Danish, and French markets. Plans is backed by Partech. No public developer API has
+  been identified during enrichment; the platform is a login-gated single-page
+  application and the site exposes no OpenAPI, SDKs, docs, or developer portal.
 url: https://raw.githubusercontent.com/api-evangelist/plans/refs/heads/main/apis.yml
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://plans.app/apple-touch-icon.png
 x-type: company
 x-source: vc-portfolio
 x-backed-by:
@@ -11,10 +31,16 @@ x-tier: stub
 x-tier-reason: portfolio-lead
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-20'
 tags:
 - Company
 - Climate
+- Energy
+- Decarbonization
+- Built World
+- Home Retrofit
+- Construction Tech
+- Sustainability
 apis: []
 maintainers:
 - FN: Kin Lane
@@ -22,5 +48,28 @@ maintainers:
 - FN: APIs.json
   email: info@apis.io
 common:
+- type: DomainSecurity
+  url: security/plans-domain-security.yml
 - type: Website
-  url: https://lun.energy/
+  url: https://plans.app/
+- type: SignUp
+  url: https://plans.app/signup
+- type: Login
+  url: https://platform.plans.app/login
+- type: StatusPage
+  url: https://plans.hyperping.app
+- type: TermsOfService
+  url: https://plans.app/legal/terms-and-conditions-en
+- type: PrivacyPolicy
+  url: https://plans.app/legal/privacy-policy-en
+- type: Careers
+  url: https://plans.app/careers
+- type: Lifecycle
+  url: lifecycle/plans-lifecycle.yml
+- type: WellKnown
+  url: well-known/plans-well-known.yml
+x-enrichment:
+  date: '2026-07-20'
+  status: minimal
+  artifacts_added: 3
+  pass: local-v1
